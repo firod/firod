@@ -1,0 +1,1101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css-fin20.css" tppabs="http://crapware.aidf.org/forum/Themes/default/css/index.css?fin20" />
+	<link rel="stylesheet" type="text/css" href="ie7.css" tppabs="http://crapware.aidf.org/forum/Themes/default/css/ie7.css" />
+	<script type="text/javascript" src="script.js-fin20.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/script.js?fin20"></script>
+	<script type="text/javascript" src="theme.js-fin20.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/theme.js?fin20"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default*/;
+		var smf_default_theme_url = "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default*/;
+		var smf_images_url = "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default/images*/;
+		var smf_scripturl = "index.php.htm"/*tpa=http://crapware.aidf.org/forum/index.php*/;
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Загружается...";
+		var ajax_notification_cancel_text = "Отменить";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Типовые алгоритмы, вводные статьи (Новички, читайте!)" />
+	<meta name="keywords" content="кликер, автокликер, скрипт, макрос, сценарий, программирование, clickermann, clicker, чит, бот, игры, программы, l2, л2, скачать кликер, кликер мыши, бесплатно" />
+	<title>Типовые алгоритмы, вводные статьи (Новички, читайте!)</title>
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="http://crapware.aidf.org/forum/index.php?topic=33.0" />
+	<link rel="help" href="http://crapware.aidf.org/forum/index.php?action=help" />
+	<link rel="search" href="http://crapware.aidf.org/forum/index.php?action=search" />
+	<link rel="contents" href="http://crapware.aidf.org/forum/index.php" />
+	<link rel="alternate" type="application/rss+xml" title="Автокликер Clickermann :: Форум - RSS" href="http://crapware.aidf.org/forum/index.php?type=rss;action=.xml" />
+	<link rel="prev" href="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev" />
+	<link rel="next" href="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next" />
+	<link rel="index" href="http://crapware.aidf.org/forum/index.php?board=1.0" />
+</head>
+<body>
+<div id="wrapper" style="width: 90%">
+	<div id="header"><div class="frame">
+		<div id="top_section">
+			<h1 class="forumtitle">
+				<a href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php">Автокликер Clickermann :: Форум</a>
+			</h1>
+			<img id="upshrink" src="upshrink.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/upshrink.png" alt="*" title="Свернуть/Развернуть" style="display: none;" />
+			<img id="smflogo" src="smflogo.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/smflogo.png" alt="Simple Machines Forum" title="Simple Machines Forum" />
+		</div>
+		<div id="upper_section" class="middletext">
+			<div class="user">
+				<script type="text/javascript" src="sha1.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/sha1.js"></script>
+				<form id="guest_form" action="http://crapware.aidf.org/forum/index.php?action=login2" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, 'a7172b9ddd58b454b887154219817082');">
+					<div class="info">Добро пожаловать, <strong>Гость</strong>. Пожалуйста, <a href="index.php-action=login.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=login">войдите</a> или <a href="index.php-action=register.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=register">зарегистрируйтесь</a>.</div>
+					<input type="text" name="user" size="10" class="input_text" />
+					<input type="password" name="passwrd" size="10" class="input_password" />
+					<select name="cookielength">
+						<option value="60">1 час</option>
+						<option value="1440">1 день</option>
+						<option value="10080">1 неделя</option>
+						<option value="43200">1 месяц</option>
+						<option value="-1" selected="selected">Навсегда</option>
+					</select>
+					<input type="submit" value="Вход" class="button_submit" /><br />
+					<div class="info"></div>
+					<input type="hidden" name="hash_passwrd" value="" />
+				</form>
+			</div>
+			<div class="news normaltext">
+				<form id="search_form" action="http://crapware.aidf.org/forum/index.php?action=search2" method="post" accept-charset="UTF-8">
+					<input type="text" name="search" value="" class="input_text" />&nbsp;
+					<input type="submit" name="submit" value="Поиск" class="button_submit" />
+					<input type="hidden" name="advanced" value="0" />
+					<input type="hidden" name="topic" value="33" /></form>
+				<h2>Новости: </h2>
+				<p>Добавлена <strong>тема оформления &quot;Clickermann&quot;</strong> для кода с подсветкой синтаксиса. Выбирается из выпадающего списка &quot;Код&quot; (рядом с &quot;цвет&quot;, &quot;размер&quot; и &quot;шрифт&quot;) в режиме редактирования поста. Либо просто BB-тегом &quot;code=clickermann&quot;</p>
+			</div>
+		</div>
+		<br class="clear" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var oMainHeaderToggle = new smc_Toggle({
+				bToggleEnabled: true,
+				bCurrentlyCollapsed: false,
+				aSwappableContainers: [
+					'upper_section'
+				],
+				aSwapImages: [
+					{
+						sId: 'upshrink',
+						srcExpanded: smf_images_url + '/upshrink.png',
+						altExpanded: 'Свернуть/Развернуть',
+						srcCollapsed: smf_images_url + '/upshrink2.png',
+						altCollapsed: 'Свернуть/Развернуть'
+					}
+				],
+				oThemeOptions: {
+					bUseThemeSettings: false,
+					sOptionName: 'collapse_header',
+					sSessionVar: 'd3b349eb410',
+					sSessionId: 'a7172b9ddd58b454b887154219817082'
+				},
+				oCookieOptions: {
+					bUseCookie: true,
+					sCookieName: 'upshrink'
+				}
+			});
+		// ]]></script>
+		<div id="main_menu">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home">
+					<a class="active firstlevel" href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php">
+						<span class="last firstlevel">Начало</span>
+					</a>
+				</li>
+				<li id="button_help">
+					<a class="firstlevel" href="index.php-action=help.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=help">
+						<span class="firstlevel">Помощь</span>
+					</a>
+				</li>
+				<li id="button_search">
+					<a class="firstlevel" href="index.php-action=search.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=search">
+						<span class="firstlevel">Поиск</span>
+					</a>
+				</li>
+				<li id="button_login">
+					<a class="firstlevel" href="index.php-action=login.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=login">
+						<span class="firstlevel">Вход</span>
+					</a>
+				</li>
+				<li id="button_register">
+					<a class="firstlevel" href="index.php-action=register.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=register">
+						<span class="last firstlevel">Регистрация</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<br class="clear" />
+	</div></div>
+	<div id="content_section"><div class="frame">
+		<div id="main_content_section">
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php"><span>Автокликер Clickermann :: Форум</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php.htm#c1" tppabs="http://crapware.aidf.org/forum/index.php#c1"><span>Основной раздел</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php-board=1.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?board=1.0"><span>Общие вопросы</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="index.php-topic=33.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0"><span>Типовые алгоритмы, вводные статьи (Новички, читайте!)</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg223"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new">&laquo; предыдущая тема</a> <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new">следующая тема &raquo;</a></div>
+		<div class="buttonlist floatright">
+			<ul>
+				<li><a class="button_strip_print" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0%27" tppabs="http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0" rel="new_win nofollow"><span class="last">Печать</span></a></li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Страницы: [<strong>1</strong>] <a class="navPages" href="index.php-topic=33.15.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.15">2</a> <a class="navPages" href="index.php-topic=33.30.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.30">3</a> <span style="font-weight: bold;" onclick="expandPages(this, 'index.php-topic=33.%1$d.htm'/*tpa=http://crapware.aidf.org/forum/index.php?topic=33.%1$d*/, 45, 195, 15);" onmouseover="this.style.cursor='pointer';"> ... </span><a class="navPages" href="index.php-topic=33.195.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.195">14</a> </div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="veryhot_post_sticky.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/topic/veryhot_post_sticky.gif" align="bottom" alt="" />
+						<span id="author">Автор</span>
+						Тема: Типовые алгоритмы, вводные статьи (Новички, читайте!) &nbsp;(Прочитано 116612 раз)
+					</h3>
+				</div>
+				<p id="whoisviewing" class="smalltext">0 Пользователей и 3 Гостей просматривают эту тему.
+				</p>
+				<form action="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=quickmod2;topic=33.0  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=quickmod2;topic=33.0%27" tppabs="http://crapware.aidf.org/forum/index.php?action=quickmod2;topic=33.0" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('a7172b9ddd58b454b887154219817082', 'd3b349eb410') : false">
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1" title="Просмотр профиля Johnny">Johnny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_223_extra_info">
+								<li class="membergroup">Создатель</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="adm.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/adm.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1">
+										<img class="avatar" src="index.php-action=dlattach;attach=359;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=359;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 454</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_223">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg223  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg223#msg223%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg223#msg223" rel="nofollow">Типовые алгоритмы, вводные статьи (Новички, читайте!)</a>
+									</h5>
+									<div class="smalltext">&#171; <strong> :</strong> Октябрь 26, 2012, 08:57:41 am &#187;</div>
+									<div id="msg_223_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_223"><span style="font-size: 8pt;" class="bbc_size">В данной теме предлагается размещать примеры простейших алгоритмов для конкретных задач. Тема призвана облегчить освоение программы новичками</span><br /><br /><span style="font-size: 13pt;" class="bbc_size"><span style="color: purple;" class="bbc_color"><strong>Содержание:</strong></span></span><br />- <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg224  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg224#msg224%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg224#msg224" class="bbc_link" target="_blank">Поиск пикселя определенного цвета и щелчок по нему мышью</a><br />- <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg229  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg229#msg229%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg229#msg229" class="bbc_link" target="_blank">Запуск блокнота и запись в нем произвольного текста</a><br />- <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg562  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg562#msg562%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg562#msg562" class="bbc_link" target="_blank">WinAPI, работа с окнами через PostMessage</a><br />- <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg637  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg637#msg637%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg637#msg637" class="bbc_link" target="_blank">Привязка к окну (+ красивое рисование в Paint)</a><br />- <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg708  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg708#msg708%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg708#msg708" class="bbc_link" target="_blank">Написание подпрограммы для вычисления даты</a><br />- <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg810  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg810#msg810%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg810#msg810" class="bbc_link" target="_blank">Выполнение действия в разные промежутки времени</a><br />- <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg972  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg972#msg972%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg972#msg972" class="bbc_link" target="_blank">Пример использования функций работы с txt файлами</a><br />- <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg12641  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg12641#msg12641%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg12641#msg12641" class="bbc_link" target="_blank">Сортировка массива</a><br />- <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=88.msg1571  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=88.msg1571#msg1571%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=88.msg1571#msg1571" class="bbc_link" target="_blank">Распознавание чисел</a>&nbsp; <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=88.msg16221  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=88.msg16221#msg16221%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=88.msg16221#msg16221" class="bbc_link" target="_blank">Распознавание текста</a> <br />- <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg17626  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg17626#msg17626%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg17626#msg17626" class="bbc_link" target="_blank">Развернуть окно на весь экран</a><br />- <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=2778.msg17791  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=2778.msg17791#msg17791%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=2778.msg17791#msg17791" class="bbc_link" target="_blank">Простое создание снимков c цветокоррекцией COLORMODE</a><br /><br /><br /></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_223">
+								&#171; <em>Последнее редактирование: Октябрь 29, 2016, 04:01:56 pm от Oraven</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg224"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1" title="Просмотр профиля Johnny">Johnny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_224_extra_info">
+								<li class="membergroup">Создатель</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="adm.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/adm.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1">
+										<img class="avatar" src="index.php-action=dlattach;attach=359;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=359;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 454</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_224">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg224  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg224#msg224%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg224#msg224" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #1 :</strong> Октябрь 26, 2012, 10:00:25 am &#187;</div>
+									<div id="msg_224_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_224"><span style="font-size: 14pt;" class="bbc_size"><span style="color: blue;" class="bbc_color">Поиск пикселя определенного цвета и щелчок по нему мышью</span></span><br /><br />Использованные инструкции (ознакомьтесь с ними в справке по языку):<br /><ul class="bbc_list"><li>getscreen</li><li>if_pixel_in .. end_if</li><li>print</li><li>lclick</li><li>else</li><li>halt</li></ul><br />Приведенный ниже код ищет на экране пиксель красного цвета, начиная с левого верхнего угла. Как только пиксель будет найден, поиск окончится. В данном примере обрабатываются как успешный поиск, так и неуспешный.<br /><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// помещение текущего снимка экрана в буфер программы</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// это необходимо для работы всех графических функций и процедур</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">getscreen</span> </div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// --- конструкция поиска пикселя в буфере экрана ---</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// координаты 0, 0, $_xmax, $_ymax описывают прямоугольную область, в которой будет осуществлен поиск. при этом $_xmax и $_ymax содержат максимально возможные значения для текущего разрешения экрана. 255 это код цвета, он соответствует красному. код цвета можно узнать в редакторе, наведя курсор на нужного цвета пиксель</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// сама инструкция поиска if_pixel_in по сути представляет собой условие, то есть выполнение кода, который описан внутри условия, зависит от результата проверки самого условия (если пиксель найден) с учетом всех вышеописанных параметров.</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">if_pixel_in</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">0</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$_xmax</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$_ymax</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">255</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #008000; font-style: italic;">// если пиксель заданного цвета найден, его координаты будут помещены в системные переменные $_return1 и $_return2. можно их распечатать в лог ...</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">print</span><span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;Цвет обнаружен в координатах: &quot;</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$_return1</span><span style="color: #000000;">,</span> <span style="color: #000000;">,</span><span style="color: #800080;">&quot;:&quot;</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$_return2</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #008000; font-style: italic;">// ... а можно сразу кликнуть по нему левой кнопкой мыши</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">lclick</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_return1</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$_return2</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">else</span> &nbsp; <span style="color: #008000; font-style: italic;">// блок else (вместе с кодом) не обязателен, но он обеспечивает обработку ситуации, когда условие вернуло отрицательный результат</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #008000; font-style: italic;">// если ничего не найдено, выводим сообщение</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">print</span><span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;ничего не найдено&quot;</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">end_if</span> &nbsp; <span style="color: #008000; font-style: italic;">// конец условия</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">halt</span> &nbsp; <span style="color: #008000; font-style: italic;">// остановка скрипта, обеспечивает однократное выполнение</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li></ol></pre></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_224">
+								&#171; <em>Последнее редактирование: Ноябрь 05, 2012, 06:43:04 pm от Johnny</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg229"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10" title="Просмотр профиля Сергей">Сергей</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_229_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10">
+										<img class="avatar" src="Nirvana.jpg" tppabs="http://crapware.aidf.org/forum/avatars/Musicians/Nirvana.jpg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 159</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_229">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg229  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg229#msg229%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg229#msg229" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #2 :</strong> Октябрь 26, 2012, 04:53:11 pm &#187;</div>
+									<div id="msg_229_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_229"><span style="font-size: 14pt;" class="bbc_size"><span style="color: blue;" class="bbc_color">Запуск блокнота и запись в нем произвольного текста.</span></span><br /><br />Данный скрипт запускает блокнот и 5 раз записывает в него строку &quot;The quick brown fox jumps over the lazy dog.&quot;<br /><div class="codeheader">Код: Javascript</div><pre class="javascript geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">#name <span style="color: #3366CC;">&quot;Запись в блокнот&quot;</span><span style="color: #006600; font-style: italic;">//Имя нашего скрипта</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">EXECUTE<span style="color: #009900;">&#40;</span><span style="color: #3366CC;">&quot;notepad.exe&quot;</span><span style="color: #009900;">&#41;</span><span style="color: #006600; font-style: italic;">//Запускаем программу notepad.exe. Команда EXECUTE равносильна окну &quot;Выполнить&quot; в Виндовс (Win+R).</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">WNDSTATE<span style="color: #009900;">&#40;</span>WNDFIND<span style="color: #009900;">&#40;</span><span style="color: #3366CC;">&quot;Блокнот&quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">,</span> <span style="color: #CC0000;">1</span><span style="color: #009900;">&#41;</span><span style="color: #006600; font-style: italic;">//Разворачиваем окно в заголовке которого есть строка &quot;Блокнот&quot;. 1 - означает развернуть, 0 - свернуть. &nbsp; </span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">WAITMS<span style="color: #009900;">&#40;</span><span style="color: #CC0000;">500</span><span style="color: #009900;">&#41;</span><span style="color: #006600; font-style: italic;">//Ждем чтобы блокнот окончательно запустился. 500 мс достаточно</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000066; font-weight: bold;">FOR</span><span style="color: #009900;">&#40;</span>$i<span style="color: #339933;">,</span> $i <span style="color: #339933;">&lt;</span> <span style="color: #CC0000;">5</span><span style="color: #009900;">&#41;</span><span style="color: #006600; font-style: italic;">//Начало цикла. Цифра 5 означает что цикл повторится 5 раз</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; KEYSTRING<span style="color: #009900;">&#40;</span><span style="color: #3366CC;">&quot;The quick brown fox jumps over the lazy dog.&quot;</span><span style="color: #339933;">,</span> <span style="color: #CC0000;">20</span><span style="color: #009900;">&#41;</span><span style="color: #006600; font-style: italic;">//Вводим текст. 20 означает задержку в 20 мс между вводом каждой буквы</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; KEYPRESS<span style="color: #009900;">&#40;</span>#ENTER<span style="color: #009900;">&#41;</span><span style="color: #006600; font-style: italic;">//Нажимаем Enter чтобы перевести строку. #ENTER - код клавиши Enter</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">END_CYC<span style="color: #006600; font-style: italic;">//Заканчиваем цикл</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">HALT<span style="color: #006600; font-style: italic;">//Останавливаем скрипт</span></div></li></ol></pre><br />Коды всех клавиш можно посмотреть в help.chm, в разделе &quot;Коды клавиш&quot;.<br />Обратите внимание, что у вас должна быть включена английская раскладка в окне кликермана и в окне блокнота.<br /><br />Используемые команды:<br /><ul class="bbc_list"><li><strong>EXECUTE</strong> - Выполнение программ</li><li><strong>WNDSTATE</strong> - Сворачивание/разворачивание окна</li><li><strong>WNDFIND</strong> - Нахождение окна по заголовку</li><li><strong>WAITMS</strong> - Остановка скрипта на заданное кол-во миллисекунд</li><li><strong>FOR</strong> - Цикл</li><li><strong>KEYSTRING</strong> - Печать текста</li><li><strong>KEYPRESS</strong> - Нажатие клавиш</li><li><strong>HALT</strong> - Остановка программы</li></ul></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_229">
+								&#171; <em>Последнее редактирование: Октябрь 27, 2012, 10:46:17 am от Сергей</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_229_signature">Отсутствую.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg231"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5" title="Просмотр профиля Oraven">Oraven</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_231_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Герой форума</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5">
+										<img class="avatar" src="index.php-action=dlattach;attach=510;type=avatar.gif" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=510;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 2873</li>
+								<li class="blurb">Котэ</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_231">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg231  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg231#msg231%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg231#msg231" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #3 :</strong> Октябрь 26, 2012, 05:30:14 pm &#187;</div>
+									<div id="msg_231_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_231"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg229  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg229#msg229%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg229#msg229">Цитата: Сергей от Октябрь 26, 2012, 04:53:11 pm</a></div></div><blockquote class="bbc_standard_quote">Данный скрипт запускает блокнот и 5 раз записывает в него строку &quot;The quick brown fox jumps over the lazy dog.&quot;</blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />Заметь, что должна быть включена английская раскладка.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_231">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg248"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17" title="Просмотр профиля ЦИТРИН">ЦИТРИН</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_248_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17">
+										<img class="avatar" src="index.php-action=dlattach;attach=30;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=30;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 485</li>
+								<li class="blurb">Марафон опавших листьев, коктейль из дыма и мыслей</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_248">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg248  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg248#msg248%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg248#msg248" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #4 :</strong> Октябрь 26, 2012, 08:58:48 pm &#187;</div>
+									<div id="msg_248_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_248"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg231  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg231#msg231%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg231#msg231">Цитата: Oraven от Октябрь 26, 2012, 05:30:14 pm</a></div></div><blockquote class="bbc_standard_quote">Заметь, что должна быть включена английская раскладка.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Нельзя ли&nbsp; &nbsp;процедуру&nbsp; переключения раскладки&nbsp; поручить&nbsp; самой программе, или хотя бы дать понять пользователю , что&nbsp; у него раскладка не та?&nbsp; <br />Это я к чему?<br />Попробовал&nbsp; воспользоваться примером .<br />НО!<br />&nbsp;В моей ноуте никакие команды ( в языковой панели)&nbsp; по изменению раскладки&nbsp; так и не смогли &quot;убедить&quot; стандартный блокнот писать по английски. Хотя вручную все делаю&nbsp; исправно.<br />&nbsp; Если переключено на русский то&nbsp; получаю пустой лист с&nbsp; 5 точками<br />&nbsp;Если переключаю на англ , то печатается текст, но русскими буквами.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_248">
+								&#171; <em>Последнее редактирование: Октябрь 26, 2012, 10:12:13 pm от ЦИТРИН</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_248_signature">Бабочки полёт будит тихую поляну в солнечном свету...</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg257"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=19  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=19%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=19" title="Просмотр профиля СлавьЯнИнъ">СлавьЯнИнъ</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_257_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 179</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=19  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=19%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=19"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="exclamation.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/exclamation.gif" alt="" />
+									</div>
+									<h5 id="subject_257">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg257  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg257#msg257%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg257#msg257" rel="nofollow">внимание!</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #5 :</strong> Октябрь 26, 2012, 10:21:09 pm &#187;</div>
+									<div id="msg_257_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_257">В переключении языка есть особенность.<br />Для корректного вывода раскладка должна быть одинакова и в кликере в поле ввода.<br /></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_257">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_257_signature">добрый смех равняет всех</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg259"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17" title="Просмотр профиля ЦИТРИН">ЦИТРИН</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_259_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17">
+										<img class="avatar" src="index.php-action=dlattach;attach=30;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=30;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 485</li>
+								<li class="blurb">Марафон опавших листьев, коктейль из дыма и мыслей</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_259">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg259  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg259#msg259%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg259#msg259" rel="nofollow">Re: внимание!</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #6 :</strong> Октябрь 26, 2012, 10:50:03 pm &#187;</div>
+									<div id="msg_259_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_259"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg257  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg257#msg257%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg257#msg257">Цитата: СлавьЯнИнъ от Октябрь 26, 2012, 10:21:09 pm</a></div></div><blockquote class="bbc_standard_quote"> раскладка должна быть одинакова и в кликере в поле ввода.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Тут непонятный баг. Изначально у меня стоит англ и печатаю от руки в блокноте англ.<br />Но в момент запуска кликера визуально наблюдается самопроизвольный переход на&nbsp; русскую раскладку&nbsp; в языковой панели.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_259">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_259_signature">Бабочки полёт будит тихую поляну в солнечном свету...</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg266"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=19  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=19%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=19" title="Просмотр профиля СлавьЯнИнъ">СлавьЯнИнъ</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_266_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 179</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=19  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=19%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=19"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_266">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg266  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg266#msg266%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg266#msg266" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #7 :</strong> Октябрь 27, 2012, 07:47:53 am &#187;</div>
+									<div id="msg_266_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_266">1. Отследи постянно ли происходит этот переход.<br />2. Воспользуйся кодом:<br /><div class="codeheader">Код: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Выделить]</a></div><code class="bbc_code">KEYDOWN (#ALT)&nbsp; // меняем на русскую раскладку<br />waitms(100)<br />KEYPRESS (#SHIFT)<br />&nbsp;waitms(100)<br />&nbsp;KEYUP (#ALT)<br />&nbsp;waitms(100)<br />&nbsp;KEYSTRING (&quot;&quot;)<br />KEYDOWN (#ALT)&nbsp; // меняем обратно<br />waitms(100)<br />KEYPRESS (#SHIFT)<br />waitms(100)<br />KEYUP (#ALT)</code><br />В моём случае замечено что команда KEYSTRING некорректно работает с раскладкой на русском языке. Мне пришлось писать по русски через KEYPRESS (#z).</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_266">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_266_signature">добрый смех равняет всех</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg267"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1" title="Просмотр профиля Johnny">Johnny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_267_extra_info">
+								<li class="membergroup">Создатель</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="adm.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/adm.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1">
+										<img class="avatar" src="index.php-action=dlattach;attach=359;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=359;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 454</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_267">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg267  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg267#msg267%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg267#msg267" rel="nofollow">Re: внимание!</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #8 :</strong> Октябрь 27, 2012, 10:03:24 am &#187;</div>
+									<div id="msg_267_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_267"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg259  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg259#msg259%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg259#msg259">Цитата: ЦИТРИН от Октябрь 26, 2012, 10:50:03 pm</a></div></div><blockquote class="bbc_standard_quote">Тут непонятный баг. Изначально у меня стоит англ и печатаю от руки в блокноте англ.<br />Но в момент запуска кликера визуально наблюдается самопроизвольный переход на&nbsp; русскую раскладку&nbsp; в языковой панели.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>просто винда запоминает для каждого приложения раскладку. даже если это калькулятор и вводить ему нечего. насколько я помню за это отвечает процесс ctfmon.exe<br />можете поэкспериментировать.<br />вообще с нелатиницей у кейстринга всегда проблемы. поэтому обычно я рекомендую писать &quot;привет мир&quot; как &quot;ghbdtn vbh&quot;<br /><br />но если кто-то разберется с непонятным багом и сделает его понятным, думаю я смогу его исправить <img src="smiley-1.gif" tppabs="http://crapware.aidf.org/forum/Smileys/default/smiley.gif" alt="&#58;&#41;" title="Улыбающийся" class="smiley" /></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_267">
+								&#171; <em>Последнее редактирование: Октябрь 27, 2012, 10:07:02 am от Johnny</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg268"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10" title="Просмотр профиля Сергей">Сергей</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_268_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10">
+										<img class="avatar" src="Nirvana.jpg" tppabs="http://crapware.aidf.org/forum/avatars/Musicians/Nirvana.jpg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 159</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_268">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg268  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg268#msg268%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg268#msg268" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #9 :</strong> Октябрь 27, 2012, 11:17:49 am &#187;</div>
+									<div id="msg_268_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_268">Нафлудили тут. <br /><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg231  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg231#msg231%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg231#msg231">Цитата: Oraven от Октябрь 26, 2012, 05:30:14 pm</a></div></div><blockquote class="bbc_standard_quote">Заметь, что должна быть включена английская раскладка.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Поправил.<br /><br /><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg267  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg267#msg267%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg267#msg267">Цитата: Johnny от Октябрь 27, 2012, 10:03:24 am</a></div></div><blockquote class="bbc_standard_quote">вообще с нелатиницей у кейстринга всегда проблемы. поэтому обычно я рекомендую писать &quot;привет мир&quot; как &quot;ghbdtn vbh&quot;<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Почему бы кликерману самому, автоматически не конвертировать русский текст в лытдыбру и сразу печатать? А то сейчас поведение KEYSTRING очень странное. <br />Вот методом тыка я вывел:<br />Если в кликермане раскладка русская, то русские строки KEYSTRING понимает, но английские нет. Если раскладка английская, то наоборот. <br />От этого большая путаница, ведь за раскладкой нужно следить ещё и в целевом окне.<br /><br />И ещё ввести бы функцию KEYLAYOUT($hwnd) которая возвращает текущую раскладку в заданном hwnd. Ну или хотя бы раскладку активного окна.<br /><br /><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg266  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg266#msg266%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg266#msg266">Цитата: СлавьЯнИнъ от Октябрь 27, 2012, 07:47:53 am</a></div></div><blockquote class="bbc_standard_quote">2. Воспользуйся кодом<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />Вариант чуть по-проще:<br /><div class="codeheader">Код: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Выделить]</a></div><code class="bbc_code">SUB(CHANGE_LAYOUT)<br />&nbsp; &nbsp;KEYDOWN(#CTRL)<br />&nbsp; &nbsp;KEYPRESS(#SHIFT)<br />&nbsp; &nbsp;KEYUP(#CTRL)<br />&nbsp; &nbsp;<br />&nbsp; &nbsp;KEYDOWN(#ALT)<br />&nbsp; &nbsp;KEYPRESS(#SHIFT)<br />&nbsp; &nbsp;KEYUP(#ALT)<br />END_SUB</code></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_268">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_268_signature">Отсутствую.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg276"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17" title="Просмотр профиля ЦИТРИН">ЦИТРИН</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_276_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17">
+										<img class="avatar" src="index.php-action=dlattach;attach=30;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=30;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 485</li>
+								<li class="blurb">Марафон опавших листьев, коктейль из дыма и мыслей</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_276">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg276  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg276#msg276%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg276#msg276" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #10 :</strong> Октябрь 27, 2012, 12:06:55 pm &#187;</div>
+									<div id="msg_276_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_276"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg268  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg268#msg268%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg268#msg268">Цитата: Сергей от Октябрь 27, 2012, 11:17:49 am</a></div></div><blockquote class="bbc_standard_quote">Нафлудили тут. <br />Вариант чуть по-проще:<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Корифеям большое спасибо!<br />Если не затруднит , пишите полностью рабочие скрипты. Вам не трудно сделать&nbsp; копипаст в скрипт ( туда куда нужно) зато&nbsp; у нуба одним ступором меньше.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_276">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_276_signature">Бабочки полёт будит тихую поляну в солнечном свету...</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg453"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=12  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=12%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=12" title="Просмотр профиля Полуночник">Полуночник</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_453_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 157</li>
+								<li class="blurb">Умный не пошлёт на... он скажет -вы далеко пойдёте</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=12  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=12%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=12"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_453">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg453  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg453#msg453%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg453#msg453" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #11 :</strong> Октябрь 31, 2012, 05:54:25 pm &#187;</div>
+									<div id="msg_453_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_453">Решил небольшую лепту внести...<br /><span style="font-size: 12pt;" class="bbc_size"><strong>Переменные.[/</span></strong>size]<br />&nbsp;Что это и зачем? Допустим Вы пишете скрипт на 500 строк и нём есть много одинаковых действий, например одни и теже координаты для клика:<br /><div class="codeheader">Код: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Выделить]</a></div><code class="bbc_code">LCLICK(695,336)<br />WAITMS(500)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//Задержка выполнение следующей строки скрипта в милисекундах<br />LCLICK(728,375) <br />WAIT(5,8)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//Таже задержка, но в секундах<br /><br />LCLICK(695,386)<br />WAIT(RND(3,5))&nbsp; //А вот так далаем рандомную задержку от 3 до 5 секунд<br />LCLICK(728,375) <br />WAIT(RND(5,8))<br /><br />LCLICK(695,433) <br />WAITMS(RND(300,500))<br />LCLICK(728,375) <br />WAIT(RND(5,8)) и т.д.</code>Вместо того, что бы каждый раз вписывать одни и теже координаты, можно &quot;обьявить переменную&quot; - $<br />Прописывается так: $(название переменной) = её значение(число или слово)... Например:<br />$x = 695<br />$y = 728<br />$z = 375<br />В результате мы в скрипт можем вместо точек координат вставлять переменные и у нас получится следующее:<br /><div class="codeheader">Код: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Выделить]</a></div><code class="bbc_code">$x = 695<br />$y = 728<br />$z = 375<br />LCLICK($x,336)&nbsp; &nbsp; &nbsp; &nbsp;//заменили координату 695 на переменную $x<br />WAITMS(500) <br />LCLICK($y,$z)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//дальше по аналогии, меняем координаты на нужные нам переменные<br />WAIT(RND(5,8))<br /><br />LCLICK($x,386)<br />WAIT(RND(3,5)) <br />LCLICK($y,$z) <br />WAIT(RND(5,8))<br /><br />LCLICK($x,433) <br />WAITMS(RND(300,500))<br />LCLICK($y,$z) <br />WAIT(RND(5,8))</code><strong><span style="font-size: 12pt;" class="bbc_size">Цикличность действий.</span> </strong> <br />Автоматизация ведь у нас всё таки? ))) И так. За цикличность у нас отвечает параметр FOR и <br />WHILE.<br />Сначала&nbsp; WHILE... Пример приведённый в справочнике вводит в ступор. Попробую обьяснить языком более понятным.<br /><div class="codeheader">Код: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Выделить]</a></div><code class="bbc_code">$a =0<br />&nbsp; &nbsp;WHILE ($a = 0) //вот мы начинаем цикл <br />&nbsp; &nbsp; &nbsp; WAITMS(100)&nbsp; &nbsp; &nbsp;//задержка в милисекуднах (если просто WAIT то в секундах)<br />&nbsp; &nbsp; &nbsp; GETSCREEN&nbsp; &nbsp; &nbsp; &nbsp;//делаем снимок экрана<br />&nbsp; &nbsp; &nbsp; IF(PXL(100, 100) = 255)//если нужный пиксел(100,100 - координаты поиска пиксела, 255 - номер цвета пиксела который нам нужен)тут&nbsp; не находится, то <br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//цикл начинается заного, а если нашли то что нам надо, то в следующей строке <br />&nbsp; &nbsp; &nbsp; &nbsp; $a = 1&nbsp; &nbsp; &nbsp; &nbsp; // меняем переменную<br />&nbsp; &nbsp; &nbsp; END_IF&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //заканчиваем сравнение<br />&nbsp; &nbsp;END_CYC&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //заканчиваем цикл</code>То есть, поиск нужного пиксела или картинки будет проходить бесконечно, пока не появится то что нам надо и только тогда сценарий будет продолжать работать дальше. <br /><strong><span style="font-size: 12pt;" class="bbc_size">FOR</span> </strong> ($var, expression, [step]) - организует цикл с параметром. Для корифеев всё понятно, а я например дня три смотрел на функцию как баран на новые ворота. Но в принципе понять что написано в Help можно. Правда я смог понять только после того как разобрался с WHILE функцией.&nbsp; Если что то не правильно написал, поправьте - исправлю.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_453">
+								&#171; <em>Последнее редактирование: Ноябрь 01, 2012, 12:11:57 pm от prapor</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg455"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5" title="Просмотр профиля Oraven">Oraven</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_455_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Герой форума</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5">
+										<img class="avatar" src="index.php-action=dlattach;attach=510;type=avatar.gif" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=510;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 2873</li>
+								<li class="blurb">Котэ</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_455">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg455  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg455#msg455%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg455#msg455" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #12 :</strong> Октябрь 31, 2012, 08:39:37 pm &#187;</div>
+									<div id="msg_455_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_455"><strong>prapor</strong>, вариант цикла с WHILE можно написать куда кароче!<br /><div class="codeheader">Код: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Выделить]</a></div><code class="bbc_code">// если по координатам 100,100 цвет пиксела НЕ 255, то цикл будет работать<br /><br />GETSCREEN // снимок в буфер кликера<br /><br /><br />// условие цикла: если функция PXL находит по координатам 100,100 пиксел любого цвета кроме 255<br />// цикл будет продолжаться, а как найдет цвет 255 то прервется, и скрипт продолжится дальше после END_CYC<br /><br />WHILE(PXL(100, 100) ! 255) <br />&nbsp; &nbsp;WAITMS(100) // задержка<br />&nbsp; &nbsp;GETSCREEN // снимок в буфер кликера внутри цикла<br />END_CYC</code></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_455">
+								&#171; <em>Последнее редактирование: Ноябрь 01, 2012, 04:56:40 pm от Oraven</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg460"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=12  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=12%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=12" title="Просмотр профиля Полуночник">Полуночник</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_460_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 157</li>
+								<li class="blurb">Умный не пошлёт на... он скажет -вы далеко пойдёте</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=12  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=12%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=12"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_460">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg460  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg460#msg460%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg460#msg460" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #13 :</strong> Ноябрь 01, 2012, 11:57:58 am &#187;</div>
+									<div id="msg_460_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_460">Мне как обьяснили, так я и раскоментировал. Спс, что показали другой способ. Как уже писал из вас умельцев всё клещами надо вытягивать.<br />Только раскоментируйте свой вариант. Не всё понятно.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_460">
+								&#171; <em>Последнее редактирование: Ноябрь 01, 2012, 12:08:33 pm от prapor</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg543"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17" title="Просмотр профиля ЦИТРИН">ЦИТРИН</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_543_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17">
+										<img class="avatar" src="index.php-action=dlattach;attach=30;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=30;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 485</li>
+								<li class="blurb">Марафон опавших листьев, коктейль из дыма и мыслей</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_543">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg543  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg543#msg543%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg543#msg543" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #14 :</strong> Ноябрь 03, 2012, 12:36:55 pm &#187;</div>
+									<div id="msg_543_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_543"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg460  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg460#msg460%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg460#msg460">Цитата: prapor от Ноябрь 01, 2012, 11:57:58 am</a></div></div><blockquote class="bbc_standard_quote"> л из вас умельцев всё клещами надо вытягивать.<br />Только раскоментируйте свой вариант. Не всё понятно.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div> Проблема умельцев в том, что они&nbsp; не понимают, чего&nbsp; там такого не понимают нубы.&nbsp; Сытый - голодного....<br />Нубам эту&nbsp; особенность психологии&nbsp; нужно понимать&nbsp; и принимать спокойно.<br />Главное,&nbsp; чтобы у обеих сторон&nbsp; хватало выдержки )<br />&nbsp;</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_543">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_543_signature">Бабочки полёт будит тихую поляну в солнечном свету...</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+		<div class="buttonlist floatright">
+			<ul>
+				<li><a class="button_strip_print" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0%27" tppabs="http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0" rel="new_win nofollow"><span class="last">Печать</span></a></li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Страницы: [<strong>1</strong>] <a class="navPages" href="index.php-topic=33.15.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.15">2</a> <a class="navPages" href="index.php-topic=33.30.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.30">3</a> <span style="font-weight: bold;" onclick="expandPages(this, 'index.php-topic=33.%1$d.htm'/*tpa=http://crapware.aidf.org/forum/index.php?topic=33.%1$d*/, 45, 195, 15);" onmouseover="this.style.cursor='pointer';"> ... </span><a class="navPages" href="index.php-topic=33.195.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.195">14</a> </div>
+				<div class="nextlinks_bottom"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new">&laquo; предыдущая тема</a> <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new">следующая тема &raquo;</a></div>
+			</div>
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php"><span>Автокликер Clickermann :: Форум</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php.htm#c1" tppabs="http://crapware.aidf.org/forum/index.php#c1"><span>Основной раздел</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php-board=1.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?board=1.0"><span>Общие вопросы</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="index.php-topic=33.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0"><span>Типовые алгоритмы, вводные статьи (Новички, читайте!)</span></a>
+			</li>
+		</ul>
+	</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+				<script type="text/javascript" src="topic.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					var oQuickReply = new QuickReply({
+						bDefaultCollapsed: true,
+						iTopicId: 33,
+						iStart: 0,
+						sScriptUrl: smf_scripturl,
+						sImagesUrl: "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default/images*/,
+						sContainerId: "quickReplyOptions",
+						sImageId: "quickReplyExpand",
+						sImageCollapsed: "collapse-1.gif"/*tpa=http://crapware.aidf.org/forum/collapse.gif*/,
+						sImageExpanded: "expand.gif"/*tpa=http://crapware.aidf.org/forum/expand.gif*/,
+						sJumpAnchor: "quickreply"
+					});
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 33,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="d3b349eb410" value="a7172b9ddd58b454b887154219817082" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="33" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Сохранить" tabindex="2" onclick="return oQuickModify.modifySave(\'a7172b9ddd58b454b887154219817082\', \'d3b349eb410\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Отменить" tabindex="3" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="4" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://crapware.aidf.org/forum/index.php'+'?topic=33.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Тема: %subject% &nbsp;(Прочитано 116612 раз)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Перейти в:<" + "/label> %dropdown_list%",
+							iCurBoardId: 1,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Общие вопросы",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "да"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 1,
+							iTopicId: 33,
+							sSessionId: "a7172b9ddd58b454b887154219817082",
+							sSessionVar: "d3b349eb410",
+							sLabelIconList: "Иконка сообщения",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		</div>
+	</div></div>
+	<div id="footer_section"><div class="frame">
+		<ul class="reset">
+			<li class="copyright">
+			<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="index.php-action=credits.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=credits" title="Simple Machines Forum" target="_blank" class="new_win">SMF 2.0.2</a> |
+ <a href="javascript:if(confirm(%27http://www.simplemachines.org/about/smf/license.php  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.simplemachines.org/about/smf/license.php%27" tppabs="http://www.simplemachines.org/about/smf/license.php" title="License" target="_blank" class="new_win">SMF &copy; 2011</a>, <a href="javascript:if(confirm(%27http://www.simplemachines.org/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.simplemachines.org/%27" tppabs="http://www.simplemachines.org/" title="Simple Machines" target="_blank" class="new_win">Simple Machines</a>
+			</span></li>
+			<li><a id="button_xhtml" href="javascript:if(confirm(%27http://validator.w3.org/check?uri=referer  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://validator.w3.org/check?uri=referer%27" tppabs="http://validator.w3.org/check?uri=referer" target="_blank" class="new_win" title="Valid XHTML 1.0!"><span>XHTML</span></a></li>
+			<li><a id="button_rss" href="index.php-action=.xml;type=rss" tppabs="http://crapware.aidf.org/forum/index.php?action=.xml;type=rss" class="new_win"><span>RSS</span></a></li>
+			<li class="last"><a id="button_wap2" href="index.php-wap2.htm" tppabs="http://crapware.aidf.org/forum/index.php?wap2" class="new_win"><span>Мобильная версия</span></a></li>
+			<li>
+			 <!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t26.5;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: �������� ����� ����������� ��"+
+" �������' "+
+"border=0 width=88 height=15></a>")//--></script><!--/LiveInternet-->
+			</li>
+			
+		</ul>
+	</div></div>
+</div>
+</body></html>

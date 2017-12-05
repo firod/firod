@@ -1,0 +1,245 @@
+@font-face
+{
+	font-family: "pixfont";
+	src : url(pix_font.ttf)/*tpa=http://crapware.aidf.org/skins/vkontakte_style/pix_font.ttf*/;
+}
+
+body{ 
+	background: url(bg.png)/*tpa=http://crapware.aidf.org/images/gui/bg.png*/;
+	border: 3px solid #aaaaaa;
+
+	font-family: Verdana, Tahoma, Arial;
+	line-height: 130%;
+	font-size: 12px;
+	margin: 0;
+	padding-bottom: 40px;
+	padding-top: 10px;
+	
+}
+
+table,
+tr,
+td{
+	color: #000000;
+	font-size: 11px;
+}
+
+hr{
+	height: 0px;
+	border: solid 0px;
+	border-top-width: 1px;
+	color: #DDDDDD;
+}
+
+
+a:link,
+a:visited,
+a:active{
+	background: transparent;
+	color: #000000;
+	text-decoration: underline;
+}
+
+a:hover{
+	background: #C0C0C0;
+	color: #000000;
+	text-decoration: underline;
+}
+
+form{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+input,
+textarea,
+select{
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	color: #000000;
+	font-size: 11px;
+	margin: 0 0 0 0;
+	padding: 1;
+}
+
+
+input.button{
+	margin: 0;
+    width: auto;
+}
+.comform{
+	margin: 0;
+    width: 350px;
+}
+.formstyle{
+	margin: 0;
+    width: 200px;
+}
+
+optgroup option{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.div_top {
+	background: url(top_block.gif)/*tpa=http://crapware.aidf.org/images/gui/top_block.gif*/;
+	width: 1240px;
+	height: 151px;
+}
+
+.div_middle {
+	width: 1240px;
+	height: *;
+}
+
+.div_bottom {
+	background: url(bottom_block.gif)/*tpa=http://crapware.aidf.org/images/gui/bottom_block.gif*/;
+	width: 1240px;
+	height: 41px;
+	margin-top: 5px;
+}
+
+.subtitle{
+	color: #808080; 
+	height: 20px;
+	border-bottom: 1px solid #BECDDA;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: Verdana;
+	margin: 0;
+	padding: 0 0 0 2;
+}
+
+.subborder{ 
+	border-top: 1px solid #18578F;
+	padding: 3px;
+}
+
+.page_blocktitle{
+	background: url(central_top.gif)/*tpa=http://crapware.aidf.org/images/gui/central_top.gif*/;
+
+	border-top: 0px solid #18578F;
+	color: #000000; 
+	height: 20px;
+	font-weight: bold;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 5px;
+
+}
+
+
+.page_blockbody{ 
+	background: url(central_body.gif)/*tpa=http://crapware.aidf.org/images/gui/central_body.gif*/;
+	border: 0px solid #0080EA;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 13px;
+	
+}
+
+.page_blockbottom{ 
+	background: url(central_bottom.gif)/*tpa=http://crapware.aidf.org/images/gui/central_bottom.gif*/;
+	height: 25px;
+}
+
+
+
+.blockborder{ 
+	border: 0px solid #0080EA;
+	padding: 0px;
+}
+
+
+.blocktitle_left{
+	background: url(blockhead_left.gif)/*tpa=http://crapware.aidf.org/images/gui/blockhead_left.gif*/;
+	border-top: 0px solid #18578F;
+	color: #000000; 
+	height: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: Verdana;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+
+.blocktitle_right{
+	background: url(blockhead_right.gif)/*tpa=http://crapware.aidf.org/images/gui/blockhead_right.gif*/;
+	border-top: 0px solid #18578F;
+	color: #000000; 
+	height: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: Verdana;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+
+.blockbody{ 
+	background: url(blockbody.gif)/*tpa=http://crapware.aidf.org/images/gui/blockbody.gif*/;
+	border: 0px solid #0080EA;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 13px;
+	
+}
+
+
+.blockbottom{
+	background: url("blockbottom.gif")/*tpa=http://crapware.aidf.org/images/gui/blockbottom.gif*/;
+ 	height: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.centralblockbottom{ 
+	height: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.div_block_column
+{
+	padding: 0px;
+	width: 300px;
+}
+
+
+
+.div_page_content
+{
+	width: 630px;
+}
+
+.bottom{
+	background: transparent;
+	color: #5A6565;
+	border: 0;
+	margin: 0;
+	padding-left: 6px;
+	padding-bottom: 8px;
+	font-size: 10px;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+
+
+.top{ 
+	color: #18578F;
+	height: 100%;
+	font-size: 12px;
+	border-top: 0;
+	vertical-align: bottom;
+}
+
+.top_gif_link {
+  
+
+
+
+}

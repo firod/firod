@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="0.92" xml:lang="ru-RU.utf8">
+	<channel>
+		<title>Автокликер Clickermann :: Форум</title>
+		<link>http://crapware.aidf.org/forum/index.php</link>
+		<description><![CDATA[Новости из Автокликер Clickermann :: Форум]]></description>
+		<item>
+			<title>Re: помогите пожалуйста</title>
+			<link>http://crapware.aidf.org/forum/index.php?topic=3643.msg24896#msg24896</link>
+			<description><![CDATA[Благодарю, скажите я так понимаю &quot;$arr_Images&quot; это сама папка с файлами которые нужно будит проверить, а если у меня папка в папке то здесь нужно будет указывать &quot;$arr_Images_(название папки второй папки)&quot; или это переносится в &quot;Images\(название папки ...]]></description>
+			<category><![CDATA[Общие вопросы]]></category>
+			<comments>http://crapware.aidf.org/forum/index.php?action=post;topic=3643.0</comments>
+			<pubDate>Tue, 05 Dec 2017 06:58:02 GMT</pubDate>
+			<guid>http://crapware.aidf.org/forum/index.php?topic=3643.msg24896#msg24896</guid>
+		</item>
+		<item>
+			<title>Re: помогите пожалуйста</title>
+			<link>http://crapware.aidf.org/forum/index.php?topic=3643.msg24895#msg24895</link>
+			<description><![CDATA[<div class="quoteheader"><div class="topslice_quote"><a href="http://crapware.aidf.org/forum/index.php?topic=3643.msg24892#msg24892">Цитата: LLlteйn от Декабрь 04, 2017, 08:08:03 pm</a></div></div><blockquote class="bbc_standard_quote">Народ, я знаю что из подпрограмм нельзя выпрыгивать и мне показывали как выйти из неё&nbsp; и перейти к нужной метке, но как быть когда в подпрограмме 2 метки к которым нужно перейти в...</blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>]]></description>
+			<category><![CDATA[Общие вопросы]]></category>
+			<comments>http://crapware.aidf.org/forum/index.php?action=post;topic=3643.0</comments>
+			<pubDate>Tue, 05 Dec 2017 04:40:53 GMT</pubDate>
+			<guid>http://crapware.aidf.org/forum/index.php?topic=3643.msg24895#msg24895</guid>
+		</item>
+		<item>
+			<title>Re: помогите пожалуйста</title>
+			<link>http://crapware.aidf.org/forum/index.php?topic=3643.msg24894#msg24894</link>
+			<description>
+<![CDATA[<div class="quoteheader"><div class="topslice_quote"><a href="http://crapware.aidf.org/forum/index.php?topic=3643.msg24891#msg24891">Цитата: LLlteйn от Декабрь 04, 2017, 07:03:51 pm</a></div></div><blockquote class="bbc_standard_quote">благодарю, скажите а есть способ проверки всех картинок находящихся в определённой папке и как это можно реализовать?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />Будет нормально работать только в последней бета вер...]]>
+			</description>
+			<category><![CDATA[Общие вопросы]]></category>
+			<comments>http://crapware.aidf.org/forum/index.php?action=post;topic=3643.0</comments>
+			<pubDate>Tue, 05 Dec 2017 04:38:46 GMT</pubDate>
+			<guid>http://crapware.aidf.org/forum/index.php?topic=3643.msg24894#msg24894</guid>
+		</item>
+		<item>
+			<title>Re: [Alpha/Beta Testing]</title>
+			<link>http://crapware.aidf.org/forum/index.php?topic=356.msg24893#msg24893</link>
+			<description>
+<![CDATA[<div class="quoteheader"><div class="topslice_quote"><a href="http://crapware.aidf.org/forum/index.php?topic=356.msg24628#msg24628">Цитата: Oraven от Ноябрь 15, 2017, 07:04:24 am</a></div></div><blockquote class="bbc_standard_quote">Как на счет решения проблемы &quot;заголовка&quot; в оконном режиме.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />Починено. Там вообще не очень корректно работало.<br /><br /><strong>v4.13.006b</strong><br /><br /><a href="http://rgho.st/7NMC8qtZk" class="bbc_link" target="_blank">http://rgho.st/7NMC8qtZk</a><br /><br />так же добавлены две...]]>
+			</description>
+			<category><![CDATA[Предложения]]></category>
+			<comments>http://crapware.aidf.org/forum/index.php?action=post;topic=356.0</comments>
+			<pubDate>Mon, 04 Dec 2017 17:51:54 GMT</pubDate>
+			<guid>http://crapware.aidf.org/forum/index.php?topic=356.msg24893#msg24893</guid>
+		</item>
+		<item>
+			<title>Re: помогите пожалуйста</title>
+			<link>http://crapware.aidf.org/forum/index.php?topic=3643.msg24892#msg24892</link>
+			<description>
+<![CDATA[Народ, я знаю что из подпрограмм нельзя выпрыгивать и мне показывали как выйти из неё&nbsp; и перейти к нужной метке, но как быть когда в подпрограмме 2 метки к которым нужно перейти в двух разных случаях?<br />[code=clickermann]]>&#093;<![CDATA[$check = 0<br />WHILE($check = 0)<br />&nbsp; &nbsp;G...]]>
+			</description>
+			<category><![CDATA[Общие вопросы]]></category>
+			<comments>http://crapware.aidf.org/forum/index.php?action=post;topic=3643.0</comments>
+			<pubDate>Mon, 04 Dec 2017 17:08:03 GMT</pubDate>
+			<guid>http://crapware.aidf.org/forum/index.php?topic=3643.msg24892#msg24892</guid>
+		</item>
+	</channel>
+</rss>

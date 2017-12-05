@@ -1,0 +1,1106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css-fin20.css" tppabs="http://crapware.aidf.org/forum/Themes/default/css/index.css?fin20" />
+	<link rel="stylesheet" type="text/css" href="ie7.css" tppabs="http://crapware.aidf.org/forum/Themes/default/css/ie7.css" />
+	<script type="text/javascript" src="script.js-fin20.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/script.js?fin20"></script>
+	<script type="text/javascript" src="theme.js-fin20.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/theme.js?fin20"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default*/;
+		var smf_default_theme_url = "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default*/;
+		var smf_images_url = "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default/images*/;
+		var smf_scripturl = "index.php.htm"/*tpa=http://crapware.aidf.org/forum/index.php*/;
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Загружается...";
+		var ajax_notification_cancel_text = "Отменить";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Типовые алгоритмы, вводные статьи (Новички, читайте!)" />
+	<meta name="keywords" content="кликер, автокликер, скрипт, макрос, сценарий, программирование, clickermann, clicker, чит, бот, игры, программы, l2, л2, скачать кликер, кликер мыши, бесплатно" />
+	<title>Типовые алгоритмы, вводные статьи (Новички, читайте!)</title>
+	<link rel="canonical" href="http://crapware.aidf.org/forum/index.php?topic=33.30" />
+	<link rel="help" href="http://crapware.aidf.org/forum/index.php?action=help" />
+	<link rel="search" href="http://crapware.aidf.org/forum/index.php?action=search" />
+	<link rel="contents" href="http://crapware.aidf.org/forum/index.php" />
+	<link rel="alternate" type="application/rss+xml" title="Автокликер Clickermann :: Форум - RSS" href="http://crapware.aidf.org/forum/index.php?type=rss;action=.xml" />
+	<link rel="prev" href="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev" />
+	<link rel="next" href="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next" />
+	<link rel="index" href="http://crapware.aidf.org/forum/index.php?board=1.0" />
+</head>
+<body>
+<div id="wrapper" style="width: 90%">
+	<div id="header"><div class="frame">
+		<div id="top_section">
+			<h1 class="forumtitle">
+				<a href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php">Автокликер Clickermann :: Форум</a>
+			</h1>
+			<img id="upshrink" src="upshrink.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/upshrink.png" alt="*" title="Свернуть/Развернуть" style="display: none;" />
+			<img id="smflogo" src="smflogo.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/smflogo.png" alt="Simple Machines Forum" title="Simple Machines Forum" />
+		</div>
+		<div id="upper_section" class="middletext">
+			<div class="user">
+				<script type="text/javascript" src="sha1.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/sha1.js"></script>
+				<form id="guest_form" action="http://crapware.aidf.org/forum/index.php?action=login2" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, 'a7172b9ddd58b454b887154219817082');">
+					<div class="info">Добро пожаловать, <strong>Гость</strong>. Пожалуйста, <a href="index.php-action=login.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=login">войдите</a> или <a href="index.php-action=register.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=register">зарегистрируйтесь</a>.</div>
+					<input type="text" name="user" size="10" class="input_text" />
+					<input type="password" name="passwrd" size="10" class="input_password" />
+					<select name="cookielength">
+						<option value="60">1 час</option>
+						<option value="1440">1 день</option>
+						<option value="10080">1 неделя</option>
+						<option value="43200">1 месяц</option>
+						<option value="-1" selected="selected">Навсегда</option>
+					</select>
+					<input type="submit" value="Вход" class="button_submit" /><br />
+					<div class="info"></div>
+					<input type="hidden" name="hash_passwrd" value="" />
+				</form>
+			</div>
+			<div class="news normaltext">
+				<form id="search_form" action="http://crapware.aidf.org/forum/index.php?action=search2" method="post" accept-charset="UTF-8">
+					<input type="text" name="search" value="" class="input_text" />&nbsp;
+					<input type="submit" name="submit" value="Поиск" class="button_submit" />
+					<input type="hidden" name="advanced" value="0" />
+					<input type="hidden" name="topic" value="33" /></form>
+				<h2>Новости: </h2>
+				<p>Добавлена <strong>тема оформления &quot;Clickermann&quot;</strong> для кода с подсветкой синтаксиса. Выбирается из выпадающего списка &quot;Код&quot; (рядом с &quot;цвет&quot;, &quot;размер&quot; и &quot;шрифт&quot;) в режиме редактирования поста. Либо просто BB-тегом &quot;code=clickermann&quot;</p>
+			</div>
+		</div>
+		<br class="clear" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var oMainHeaderToggle = new smc_Toggle({
+				bToggleEnabled: true,
+				bCurrentlyCollapsed: false,
+				aSwappableContainers: [
+					'upper_section'
+				],
+				aSwapImages: [
+					{
+						sId: 'upshrink',
+						srcExpanded: smf_images_url + '/upshrink.png',
+						altExpanded: 'Свернуть/Развернуть',
+						srcCollapsed: smf_images_url + '/upshrink2.png',
+						altCollapsed: 'Свернуть/Развернуть'
+					}
+				],
+				oThemeOptions: {
+					bUseThemeSettings: false,
+					sOptionName: 'collapse_header',
+					sSessionVar: 'd3b349eb410',
+					sSessionId: 'a7172b9ddd58b454b887154219817082'
+				},
+				oCookieOptions: {
+					bUseCookie: true,
+					sCookieName: 'upshrink'
+				}
+			});
+		// ]]></script>
+		<div id="main_menu">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home">
+					<a class="active firstlevel" href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php">
+						<span class="last firstlevel">Начало</span>
+					</a>
+				</li>
+				<li id="button_help">
+					<a class="firstlevel" href="index.php-action=help.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=help">
+						<span class="firstlevel">Помощь</span>
+					</a>
+				</li>
+				<li id="button_search">
+					<a class="firstlevel" href="index.php-action=search.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=search">
+						<span class="firstlevel">Поиск</span>
+					</a>
+				</li>
+				<li id="button_login">
+					<a class="firstlevel" href="index.php-action=login.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=login">
+						<span class="firstlevel">Вход</span>
+					</a>
+				</li>
+				<li id="button_register">
+					<a class="firstlevel" href="index.php-action=register.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=register">
+						<span class="last firstlevel">Регистрация</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<br class="clear" />
+	</div></div>
+	<div id="content_section"><div class="frame">
+		<div id="main_content_section">
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php"><span>Автокликер Clickermann :: Форум</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php.htm#c1" tppabs="http://crapware.aidf.org/forum/index.php#c1"><span>Основной раздел</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php-board=1.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?board=1.0"><span>Общие вопросы</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="index.php-topic=33.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0"><span>Типовые алгоритмы, вводные статьи (Новички, читайте!)</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg695"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new">&laquo; предыдущая тема</a> <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new">следующая тема &raquo;</a></div>
+		<div class="buttonlist floatright">
+			<ul>
+				<li><a class="button_strip_print" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0%27" tppabs="http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0" rel="new_win nofollow"><span class="last">Печать</span></a></li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Страницы: <a class="navPages" href="index.php-topic=33.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0">1</a> <a class="navPages" href="index.php-topic=33.15.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.15">2</a> [<strong>3</strong>] <a class="navPages" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.45  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.45%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.45">4</a> <a class="navPages" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.60  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.60%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.60">5</a> <span style="font-weight: bold;" onclick="expandPages(this, 'index.php-topic=33.%1$d.htm'/*tpa=http://crapware.aidf.org/forum/index.php?topic=33.%1$d*/, 75, 195, 15);" onmouseover="this.style.cursor='pointer';"> ... </span><a class="navPages" href="index.php-topic=33.195.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.195">14</a> </div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="veryhot_post_sticky.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/topic/veryhot_post_sticky.gif" align="bottom" alt="" />
+						<span id="author">Автор</span>
+						Тема: Типовые алгоритмы, вводные статьи (Новички, читайте!) &nbsp;(Прочитано 116612 раз)
+					</h3>
+				</div>
+				<p id="whoisviewing" class="smalltext">0 Пользователей и 3 Гостей просматривают эту тему.
+				</p>
+				<form action="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=quickmod2;topic=33.30  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=quickmod2;topic=33.30%27" tppabs="http://crapware.aidf.org/forum/index.php?action=quickmod2;topic=33.30" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('a7172b9ddd58b454b887154219817082', 'd3b349eb410') : false">
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17" title="Просмотр профиля ЦИТРИН">ЦИТРИН</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_695_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17">
+										<img class="avatar" src="index.php-action=dlattach;attach=30;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=30;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 485</li>
+								<li class="blurb">Марафон опавших листьев, коктейль из дыма и мыслей</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_695">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg695  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg695#msg695%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg695#msg695" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #30 :</strong> Ноябрь 10, 2012, 01:22:22 pm &#187;</div>
+									<div id="msg_695_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_695">В теме &quot;Предложения по применению от новичков.&quot;&nbsp; Сергей&nbsp; написал интересный&nbsp; скрипт,&nbsp; который&nbsp; позволяет ставить дату и время&nbsp; в удобочитаемом формате.&nbsp; &nbsp;<a href="javascript:if(confirm(%27http://clickermann.tk/forum/index.php?topic=36.msg373  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://clickermann.tk/forum/index.php?topic=36.msg373#msg373%27" tppabs="http://clickermann.tk/forum/index.php?topic=36.msg373#msg373" class="bbc_link" target="_blank">http://clickermann.tk/forum/index.php?topic=36.msg373#msg373</a><br />&nbsp;Нельзя ли его перенести сюда , в шапку примеров?<br />На этом примере новичкам можно показать, как работает функция&nbsp; инклуд.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_695">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_695_signature">Бабочки полёт будит тихую поляну в солнечном свету...</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg702"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5" title="Просмотр профиля Oraven">Oraven</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_702_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Герой форума</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5">
+										<img class="avatar" src="index.php-action=dlattach;attach=510;type=avatar.gif" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=510;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 2873</li>
+								<li class="blurb">Котэ</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_702">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg702  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg702#msg702%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg702#msg702" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #31 :</strong> Ноябрь 10, 2012, 03:26:23 pm &#187;</div>
+									<div id="msg_702_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_702"><span style="color: red;" class="bbc_color"><strong>Скрипт включает действия в определенное время.</strong></span><br />IF_TIME(&quot;*:*:*&quot;). Звездочка означает любой час, любую минуту и секунду.<br /><br />IF_TIME(&quot;12:00:00&quot;) // сработает в 12:00:00<br />END_IF<br /><br />Пример:<br /><div class="codeheader">Код: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Выделить]</a></div><code class="bbc_code">IF_TIME(&quot;12:10:*&quot;) // Включаем в 12.10<br />$t1 = 1<br />END_IF<br /><br />IF_TIME(&quot;16:10:*&quot;) // Отключаем в 16.10<br />$t1 = 0<br />END_IF<br /><br /><br />IF_TIME(&quot;16:10:*&quot;) // Включаем в 16.10 <br />$t2 = 1<br />END_IF<br /><br />IF_TIME(&quot;12:10:*&quot;) // Отключаем в 12.10<br />$t2 = 0<br />END_IF<br /><br /><br />IF($t1 = 1) // 12.10<br />// здесь Действие&nbsp; <br />// Будет выполняться с 12.10 по 16.10<br />LOGWRITE(&quot;Задание в 12.10&quot;)<br />END_IF<br /><br />IF($t2 = 1) // 16.10<br />// здесь Действие <br />// Будет выполняться с 16.10 по 12.10<br />LOGWRITE(&quot;Задание в 16.10&quot;)<br />END_IF<br /><br />WAITMS (500)</code></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_702">
+								&#171; <em>Последнее редактирование: Ноябрь 10, 2012, 03:30:31 pm от Oraven</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg708"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1" title="Просмотр профиля Johnny">Johnny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_708_extra_info">
+								<li class="membergroup">Создатель</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="adm.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/adm.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1">
+										<img class="avatar" src="index.php-action=dlattach;attach=359;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=359;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 454</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="clip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/clip.gif" alt="" />
+									</div>
+									<h5 id="subject_708">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg708  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg708#msg708%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg708#msg708" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #32 :</strong> Ноябрь 11, 2012, 07:32:24 am &#187;</div>
+									<div id="msg_708_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_708"><span style="font-size: 14pt;" class="bbc_size"><span style="color: blue;" class="bbc_color">Написание подпрограммы для вычисления даты</span></span><br /><em>Пример создания пользовательских подпрограмм и их подключения через директиву include</em><br />Оригинальный пост пользователя Сергей: <a href="javascript:if(confirm(%27http://clickermann.tk/forum/index.php?topic=36.msg373  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://clickermann.tk/forum/index.php?topic=36.msg373#msg373%27" tppabs="http://clickermann.tk/forum/index.php?topic=36.msg373#msg373" class="bbc_link" target="_blank">http://clickermann.tk/forum/index.php?topic=36.msg373#msg373</a><br /><br />Данный пример раскрывает возможность &quot;прятать от глаз&quot; большой громоздкий код в программные библиотеки.<br />Имеется задача: вычислить текущую дату на основании системной переменной $_time_t<br />Для этого была написана следующая подпрограмма, для удобства вынесенная в отдельный файл date.cms<br /><br /><strong>date.cms</strong><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Day, Month, Year from $_time_t</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Author: Sergey</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Version: 1.0 (30.10.2012)</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">SUB</span><span style="color: #000000;">&#40;</span>UPDATE_DATE<span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #0000ff;">$_date_y</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">1970</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #0000ff;">$_date_m</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">1</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #0000ff;">$_date_d</span> <span style="color: #000000;">=</span> <span style="color: #000080;">ROUND</span><span style="color: #000000;">&#40;</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_time_t</span> <span style="color: #000000;">/</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">3600</span> <span style="color: #000000;">*</span> <span style="color: #0000ff;">24</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">&#41;</span> <span style="color: #000000;">-</span> <span style="color: #0000ff;">$voi</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">1</span><span style="color: #008000; font-style: italic;">//floor</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #0000ff;">$voi</span> <span style="color: #000000;">=</span> <span style="color:#800080;">0.499999999999</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #0000ff;">$break</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">0</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WHILE</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$break</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #0000ff;">$arg1</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$_date_y</span><span style="color: #000000;">-</span><span style="color: #0000ff;">1968</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #0000ff;">$arg2</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">4</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">IF</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$arg1</span><span style="color: #000000;">-</span><span style="color: #000000;">&#40;</span><span style="color: #000080;">ROUND</span><span style="color: #000000;">&#40;</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$arg1</span><span style="color: #000000;">/</span><span style="color: #0000ff;">$arg2</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">-</span><span style="color: #0000ff;">$voi</span><span style="color: #000000;">,</span><span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">*</span><span style="color: #0000ff;">$arg2</span><span style="color: #000000;">&#41;</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span><span style="color: #008000; font-style: italic;">//mod($_date_y-1968, 4) = 0</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">$nd</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">366</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">ELSE</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">$nd</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">365</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">END_IF</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">if</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_date_d</span> <span style="color: #000000;">&gt;</span> <span style="color: #0000ff;">$nd</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #000080;">INC</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_date_d</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">-</span><span style="color: #0000ff;">$nd</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #000080;">INC</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_date_y</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">1</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">ELSE</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">$break</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">1</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">END_IF</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">END_CYC</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #0000ff;">$break</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">0</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WHILE</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$break</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #0000ff;">$arg1</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$_date_y</span><span style="color: #000000;">-</span><span style="color: #0000ff;">1968</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #0000ff;">$arg2</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">4</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">IF</span><span style="color: #000000;">&#40;</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$arg1</span><span style="color: #000000;">-</span><span style="color: #000000;">&#40;</span><span style="color: #000080;">ROUND</span><span style="color: #000000;">&#40;</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$arg1</span><span style="color: #000000;">/</span><span style="color: #0000ff;">$arg2</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">-</span><span style="color: #0000ff;">$voi</span><span style="color: #000000;">,</span><span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">*</span><span style="color: #0000ff;">$arg2</span><span style="color: #000000;">&#41;</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span> <span style="color: #000000;">&amp;</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_date_m</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">2</span><span style="color: #000000;">&#41;</span> <span style="color: #000000;">&#41;</span><span style="color: #008000; font-style: italic;">//(mod($_date_y-1968, 4) = 0) &amp; ($_date_m = 2)</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">$nd</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">29</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">ELSE</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">$nd</span> <span style="color: #000000;">=</span> <span style="color: #000080;">STRCUT</span><span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;31,28,31,30,31,30,31,31,30,31,30,31&quot;</span><span style="color: #000000;">,</span> <span style="color: #000000;">&#40;</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_date_m</span><span style="color: #000000;">-</span><span style="color: #0000ff;">1</span><span style="color: #000000;">&#41;</span> <span style="color: #000000;">*</span> <span style="color: #0000ff;">3</span><span style="color: #000000;">&#41;</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">1</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">2</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">END_IF</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">IF</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_date_d</span> <span style="color: #000000;">&gt;</span> <span style="color: #0000ff;">$nd</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #000080;">INC</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_date_d</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">-</span><span style="color: #0000ff;">$nd</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #000080;">INC</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_date_m</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">1</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">ELSE</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">$break</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">1</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp;<span style="color: #000080;">END_IF</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">END_CYC</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">END_SUB</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">GOSUB<span style="color: #000000;">&#40;</span>UPDATE_DATE<span style="color: #000000;">&#41;</span></div></li></ol></pre><br />После вызова эта подпрограмма создает следующие переменные, которые могут использоваться в вашей программе<br /><ul class="bbc_list"><li>$_date_d - День</li><li>$_date_m - Месяц</li><li>$_date_y - Год</li></ul><br /><br /><strong>Пример использования подпрограммы</strong><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Подключаем файл, содержащий подпрограмму UPDATE_DATE, это работает так же, как если бы вы просто скопировали все содержимое файла date.cms за место этой строчки</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">#include <span style="color: #800080;">&quot;date.cms&quot;</span> &nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">print</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_date_d</span><span style="color: #000000;">,</span><span style="color: #800080;">&quot;.&quot;</span><span style="color: #000000;">,</span><span style="color: #0000ff;">$_date_m</span><span style="color: #000000;">,</span><span style="color: #800080;">&quot;.&quot;</span><span style="color: #000000;">,</span><span style="color: #0000ff;">$_date_y</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// Выводим &quot;старую&quot; дату</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">GOSUB<span style="color: #000000;">&#40;</span>UPDATE_DATE<span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// Вызов подпрограммы (напоминаю что ее &quot;тело&quot; находится в подключенном файле date.cms), обновление переменных</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">print</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_date_d</span><span style="color: #000000;">,</span><span style="color: #800080;">&quot;.&quot;</span><span style="color: #000000;">,</span><span style="color: #0000ff;">$_date_m</span><span style="color: #000000;">,</span><span style="color: #800080;">&quot;.&quot;</span><span style="color: #000000;">,</span><span style="color: #0000ff;">$_date_y</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// Выводим актуальную дату</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">HALT</span></div></li></ol></pre><br />Этот пример вы можете скачать из вложения<br /><br />Ах да, скрипт не будет работать если вы изобрели машину времени и переместились раньше 1970 года. <br />Отдельное спасибо Ляпису за идею с обходом отсутствия массивов.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_708">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg709"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10" title="Просмотр профиля Сергей">Сергей</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_709_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10">
+										<img class="avatar" src="Nirvana.jpg" tppabs="http://crapware.aidf.org/forum/avatars/Musicians/Nirvana.jpg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 159</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_709">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg709  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg709#msg709%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg709#msg709" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #33 :</strong> Ноябрь 11, 2012, 08:00:45 am &#187;</div>
+									<div id="msg_709_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_709">Хм, а почему в справке о условии IF_TIME нигде не написано? </div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_709">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_709_signature">Отсутствую.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg713"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1" title="Просмотр профиля Johnny">Johnny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_713_extra_info">
+								<li class="membergroup">Создатель</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="adm.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/adm.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1">
+										<img class="avatar" src="index.php-action=dlattach;attach=359;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=359;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 454</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_713">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg713  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg713#msg713%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg713#msg713" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #34 :</strong> Ноябрь 11, 2012, 08:28:45 am &#187;</div>
+									<div id="msg_713_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_713"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg709  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg709#msg709%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg709#msg709">Цитата: Сергей от Ноябрь 11, 2012, 08:00:45 am</a></div></div><blockquote class="bbc_standard_quote">Хм, а почему в справке о условии IF_TIME нигде не написано? <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>потому что я думал что удалил его уже давно. очередной костыль из серии if_что-то. неправильно все это.<br />пользуйтесь переменными<br /><br />кто спойлеры просил.<br /><div class="spoiler"><div class="spoilerheader"><a href="javascript:void(0)" onclick="n = this.parentNode.parentNode.lastChild; if(n.style.display == 'none') { n.style.display = 'block'; } else {	n.style.display = 'none';	} return false;">Spoiler: вот есть пока такие</a> </div><div class="spoilerbody" style="display: none">потом может доработаю<br />сейчас надо другие дела поделать<br /></div></div></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_713">
+								&#171; <em>Последнее редактирование: Ноябрь 11, 2012, 08:30:31 am от Johnny</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg810"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5" title="Просмотр профиля Oraven">Oraven</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_810_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Герой форума</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5">
+										<img class="avatar" src="index.php-action=dlattach;attach=510;type=avatar.gif" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=510;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 2873</li>
+								<li class="blurb">Котэ</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_810">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg810  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg810#msg810%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg810#msg810" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #35 :</strong> Ноябрь 15, 2012, 09:00:03 pm &#187;</div>
+									<div id="msg_810_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_810"><span style="color: red;" class="bbc_color"><span style="font-size: 18pt;" class="bbc_size"><span style="font-family: georgia;" class="bbc_font">Скрипт выполняет действия в разные промежутки времени</span></span></span><br /><br />1 действие 1 раз в 30 секунд<br />2 действие 1 раз в 1 минуту<br />3 действие 1 раз в 2 минуты<br /><br />$_time_t - это системная переменная. При каждом обращении к ней возвращает текущее время в формате Unix-систем <br />Отсчет времени идет в секундах. А если нужно использовать миллисекунды то в место $_time_t пишем $_ms - Системный таймер Windows.<br />Имя переменных $time1, $time2 и тд. может быть любым.<br /><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// ПЕРВОЕ ДЕЙСТВИЕ РАЗ В 30 СЕКУНД</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">IF</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$time1</span> <span style="color: #000000;">&lt;</span> <span style="color: #0000ff;">$_time_t</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// условие сработает если переменная $time1 меньше $_time_t</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$time1</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$_time_t</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">30</span> <span style="color: #008000; font-style: italic;">// записываем в переменную $time1 текущее время + 30 секунд </span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Здесь пишутся необходимые действия</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">END_IF</span> <span style="color: #008000; font-style: italic;">// конец первого условия</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// ВТОРОЕ ДЕЙСТВИЕ РАЗ В 1 МИНУТУ</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">IF</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$time2</span> <span style="color: #000000;">&lt;</span> <span style="color: #0000ff;">$_time_t</span><span style="color: #000000;">&#41;</span> </div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$time2</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$_time_t</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">60</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Здесь пишутся необходимые действия</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">END_IF</span> <span style="color: #008000; font-style: italic;">// конец второго условия</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// ТРЕТЬЕ ДЕЙСТВИЕ РАЗ В 2 МИНУТЫ</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">IF</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$time3</span> <span style="color: #000000;">&lt;</span> <span style="color: #0000ff;">$_time_t</span><span style="color: #000000;">&#41;</span> </div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$time3</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$_time_t</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">120</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Здесь пишутся необходимые действия</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">END_IF</span> <span style="color: #008000; font-style: italic;">// конец третьего условия</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// вне условий можно написать действия которые должны выполняться постоянно</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">WAITMS</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// задержка скрипта 500 мс для разгрузки процессора</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li></ol></pre><br />Также, время следующего срабатывания может записываться в файл ini.<br />Это важно если действия выполняются, например, раз в час или еще дольше, можно остановить кликер, и таймеры не собьются.<br />INT и STRCONCAT я использовал чтобы кликер при отсутствии файла time.ini не выдавал ошибок (вернет 0 если строки или файла не существует)<br /><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Эти строки выполняются при запуске 1 раз</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$time1</span> <span style="color: #000000;">=</span> <span style="color: #000080;">INT</span><span style="color: #000000;">&#40;</span><span style="color: #000080;">STRCONCAT</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;0&quot;</span><span style="color: #000000;">,</span> <span style="color: #000080;">INIREAD</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;time.ini&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;Time1&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;TIME&quot;</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$time2</span> <span style="color: #000000;">=</span> <span style="color: #000080;">INT</span><span style="color: #000000;">&#40;</span><span style="color: #000080;">STRCONCAT</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;0&quot;</span><span style="color: #000000;">,</span> <span style="color: #000080;">INIREAD</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;time.ini&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;Time2&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;TIME&quot;</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$time3</span> <span style="color: #000000;">=</span> <span style="color: #000080;">INT</span><span style="color: #000000;">&#40;</span><span style="color: #000080;">STRCONCAT</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;0&quot;</span><span style="color: #000000;">,</span> <span style="color: #000080;">INIREAD</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;time.ini&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;Time3&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;TIME&quot;</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">go<span style="color: #000000;">:</span> <span style="color: #008000; font-style: italic;">// далее произойдет зацикливание до метки GO</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">IF</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$time1</span> <span style="color: #000000;">&lt;</span> <span style="color: #0000ff;">$_time_t</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$time1</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$_time_t</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">30</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">INIWRITE</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;time.ini&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;Time1&quot;</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$time1</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;TIME&quot;</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// запись в файл time.ini времени следующего срабатывания условия</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Здесь пишутся необходимые действия</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">END_IF</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">IF</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$time2</span> <span style="color: #000000;">&lt;</span> <span style="color: #0000ff;">$_time_t</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$time2</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$_time_t</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">60</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">INIWRITE</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;time.ini&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;Time2&quot;</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$time2</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;TIME&quot;</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Здесь пишутся необходимые действия</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">END_IF</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">IF</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$time3</span> <span style="color: #000000;">&lt;</span> <span style="color: #0000ff;">$_time_t</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$time3</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$_time_t</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">120</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">INIWRITE</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;time.ini&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;Time3&quot;</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$time3</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;TIME&quot;</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Здесь пишутся необходимые действия</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">END_IF</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">WAITMS</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">goto</span><span style="color: #000000;">&#40;</span>go<span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// переход к метке GO</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li></ol></pre></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_810">
+								&#171; <em>Последнее редактирование: Ноябрь 17, 2012, 12:13:26 am от Oraven</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg811"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5" title="Просмотр профиля Oraven">Oraven</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_811_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Герой форума</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5">
+										<img class="avatar" src="index.php-action=dlattach;attach=510;type=avatar.gif" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=510;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 2873</li>
+								<li class="blurb">Котэ</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_811">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg811  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg811#msg811%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg811#msg811" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #36 :</strong> Ноябрь 15, 2012, 09:39:16 pm &#187;</div>
+									<div id="msg_811_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_811"><strong><span style="font-family: georgia;" class="bbc_font"><span style="color: red;" class="bbc_color"><span style="font-size: 18pt;" class="bbc_size">Перезагрузить или выключить компьютер.</span></span></span></strong><br /><br />Для этого пишем такие строки<br /><br /><strong><span style="color: green;" class="bbc_color">Отключение компьютера</span></strong><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">EXECUTE</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;shutdown.exe&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;/s /t 00&quot;</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">HALT</span></div></li></ol></pre><br /><strong><span style="color: green;" class="bbc_color">Отключение компьютера с принудительным завершением приложений без предварительного предупреждения</span></strong><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">EXECUTE</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;shutdown.exe&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;/s /f /t 00&quot;</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">HALT</span></div></li></ol></pre><br /><span style="color: green;" class="bbc_color"><strong>Перезагрузка компьютера</strong></span><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">EXECUTE</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;shutdown.exe&quot;</span><span style="color: #000000;">,</span> <span style="color: #800080;">&quot;/r /t 00&quot;</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">HALT</span></div></li></ol></pre><br /><strong>Обозначения:</strong><br />/l&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Выход (Log off)<br />/s&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Завершение работы компьютера<br />/r&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Перезагрузка компьютера<br />/a&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Прекращение завершения работы системы<br />/t xx&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Таймаут завершения работы - xx сек.<br />/f&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Принудительное завершение приложений без предварительного предупреждения</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_811">
+								&#171; <em>Последнее редактирование: Октябрь 11, 2016, 09:33:29 pm от Oraven</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg875"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5" title="Просмотр профиля Oraven">Oraven</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_875_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Герой форума</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5">
+										<img class="avatar" src="index.php-action=dlattach;attach=510;type=avatar.gif" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=510;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 2873</li>
+								<li class="blurb">Котэ</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_875">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg875  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg875#msg875%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg875#msg875" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #37 :</strong> Ноябрь 25, 2012, 07:05:51 pm &#187;</div>
+									<div id="msg_875_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_875"><strong><span style="font-family: georgia;" class="bbc_font"><span style="color: red;" class="bbc_color"><span style="font-size: 18pt;" class="bbc_size">Как нажать Ctrl+V в оконном режиме?</span></span></span></strong><br /><br /><span style="color: green;" class="bbc_color"><span style="font-size: 14pt;" class="bbc_size"><span style="font-family: georgia;" class="bbc_font"><strong>Вариант 1</strong></span></span></span><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">TOCLIP</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;Тест&quot;</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// отправляем текст в буфер</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">SENDMESSAGE</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$_hwnd</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">0x0302</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">//Посылаем окну команду &quot;Вставить из буфера&quot;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">halt</span> <span style="color: #008000; font-style: italic;">// стоп</span></div></li></ol></pre><br />Если не работает используем другой способ. <br /><span style="color: green;" class="bbc_color"><span style="font-size: 14pt;" class="bbc_size"><span style="font-family: georgia;" class="bbc_font"><strong>Вариант 2</strong></span></span></span><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">TOCLIP</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;Тест&quot;</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// отправляем текст в буфер</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">WAITMS</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">50</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$hwnd</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$_hwnd</span> <span style="color: #008000; font-style: italic;">// записываем в переменную $hwnd текущий HWND окна</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">HSET</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$hwnd</span><span style="color: #000000;">,</span><span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// отключаем оконный режим</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">KEYDOWN</span> <span style="color: #000000;">&#40;</span>#CTRL<span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// зажимаем Ctrl</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">HSET</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$hwnd</span><span style="color: #000000;">,</span><span style="color: #0000ff;">1</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// снова включаем оконный режим</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">WAITMS</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">20</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">KEYPRESS</span> <span style="color: #000000;">&#40;</span>#V<span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// отправляем окну нажатие клавиши V</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">HSET</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$hwnd</span><span style="color: #000000;">,</span><span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// отключаем оконный режим</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">KEYUP</span> <span style="color: #000000;">&#40;</span>#CTRL<span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// отпускаем Ctrl</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">HSET</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$hwnd</span><span style="color: #000000;">,</span><span style="color: #0000ff;">1</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// снова включаем оконный режим</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">halt</span> <span style="color: #008000; font-style: italic;">// стоп</span></div></li></ol></pre></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_875">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg878"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=39.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=39" title="Просмотр профиля Vint">Vint</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_878_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Герой форума</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=39.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=39">
+										<img class="avatar" src="index.php-action=dlattach;attach=795;type=avatar.gif" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=795;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 2880</li>
+								<li class="blurb">Лечу куда хочу. cman 4.11.003, xp32</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=39.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=39"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_878">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg878  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg878#msg878%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg878#msg878" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #38 :</strong> Ноябрь 26, 2012, 11:22:02 am &#187;</div>
+									<div id="msg_878_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_878">Люди, товарищи, граждане, господа...<br />Есть ли у кого решение известного языкового бага/особенности. Надоело следить за раскладкой в самом Кликермэне. Да и не всегда это возможно, если кровь из носа, а нужно использовать оба языка в одном скрипте.<br />Ситуацию бы спасло исправление работы программы или хотя бы костыли для этого + (как здесь предлагали) функция (переменная?) для определения раскладки в целевом окне.<br /><br />Если кто-то решил проблему, поделитесь пожалуйста.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_878">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_878_signature"><a href="javascript:if(confirm(%27http://nick-name.ru/sertificates/831036/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://nick-name.ru/sertificates/831036/%27" tppabs="http://nick-name.ru/sertificates/831036/" class="bbc_link" target="_blank"><img src="vintets-1.gif" tppabs="http://nick-name.ru/forum/vintets.gif" alt="" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg880"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10" title="Просмотр профиля Сергей">Сергей</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_880_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10">
+										<img class="avatar" src="Nirvana.jpg" tppabs="http://crapware.aidf.org/forum/avatars/Musicians/Nirvana.jpg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 159</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_880">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg880  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg880#msg880%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg880#msg880" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #39 :</strong> Ноябрь 29, 2012, 06:42:23 pm &#187;</div>
+									<div id="msg_880_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_880">Да проблему сейчас твердо никак не решить, только если при включении скрипта следить за раскладкой. Нужно конечно переменную в которой находится текущая раскладка, по другому никак.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_880">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_880_signature">Отсутствую.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg882"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=39.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=39" title="Просмотр профиля Vint">Vint</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_882_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Герой форума</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=39.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=39">
+										<img class="avatar" src="index.php-action=dlattach;attach=795;type=avatar.gif" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=795;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 2880</li>
+								<li class="blurb">Лечу куда хочу. cman 4.11.003, xp32</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=39.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=39"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_882">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg882  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg882#msg882%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg882#msg882" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #40 :</strong> Ноябрь 30, 2012, 09:16:48 am &#187;</div>
+									<div id="msg_882_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_882">Джонни, а нельзя по аналогии POSTMESSAGE на WinAPI ввести функцию<br />LoadKeyboardLayout - загрузить новую раскладку <br />достаточно будет её одной, ну для полной нирваны можно ещё<br />GetKeyboardLayout - определить текущую раскладку<br /><br />Заранее извиняюсь если сморозил чушь, в WinAPI ничего не понимаю, просто искал информацию по POSTMESSAGE и обратил внимание.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_882">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_882_signature"><a href="javascript:if(confirm(%27http://nick-name.ru/sertificates/831036/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://nick-name.ru/sertificates/831036/%27" tppabs="http://nick-name.ru/sertificates/831036/" class="bbc_link" target="_blank"><img src="vintets-1.gif" tppabs="http://nick-name.ru/forum/vintets.gif" alt="" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg885"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10" title="Просмотр профиля Сергей">Сергей</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_885_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10">
+										<img class="avatar" src="Nirvana.jpg" tppabs="http://crapware.aidf.org/forum/avatars/Musicians/Nirvana.jpg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 159</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_885">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg885  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg885#msg885%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg885#msg885" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #41 :</strong> Декабрь 01, 2012, 11:32:01 am &#187;</div>
+									<div id="msg_885_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_885">Да надо просто ввести системную переменную $_kblayout и помещать в нее раскладку текущего окна при обращении к ней.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_885">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_885_signature">Отсутствую.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg915"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=19  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=19%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=19" title="Просмотр профиля СлавьЯнИнъ">СлавьЯнИнъ</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_915_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 179</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=19  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=19%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=19"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_915">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg915  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg915#msg915%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg915#msg915" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #42 :</strong> Декабрь 06, 2012, 07:45:22 pm &#187;</div>
+									<div id="msg_915_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_915">Друзья, всем привет ))<br /><br />Возникает вопрос по посту - <span style="color: rgb(51, 68, 102);" class="bbc_color"><a href="javascript:if(confirm(%27http://clickermann.tk/forum/index.php?topic=33.msg708  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://clickermann.tk/forum/index.php?topic=33.msg708#msg708%27" tppabs="http://clickermann.tk/forum/index.php?topic=33.msg708#msg708" class="bbc_link" target="_blank">Написание подпрограммы для вычисления даты</a></span><br />У меня в данный момент вычисляет 7.12.2012. <br />Как вылечить, где править, может корректировку GMT поставить?<br />Но не в одной корректировке пояса дело.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_915">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_915_signature">добрый смех равняет всех</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg920"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10" title="Просмотр профиля Сергей">Сергей</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_920_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10">
+										<img class="avatar" src="Nirvana.jpg" tppabs="http://crapware.aidf.org/forum/avatars/Musicians/Nirvana.jpg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 159</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_920">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg920  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg920#msg920%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg920#msg920" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #43 :</strong> Декабрь 06, 2012, 11:58:14 pm &#187;</div>
+									<div id="msg_920_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_920"><strong>СлавьЯнИнъ</strong>, а какое у тебя время?<br />Он по идее должен выдавать дату которая стоит у тебя на компьютере. В $_time_t кладется время прошедшее с 1 января 1970 года без поправок на часовой пояс, т.е. время когда этот момент настал именно в твоем часовом поясе. <br />Так выдает виндовс, и так выдает и кликерман. <br />Хотя велика вероятность что проблема в алгоритме, мог где-нибудь ошибиться. </div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_920">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_920_signature">Отсутствую.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg932"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=19  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=19%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=19" title="Просмотр профиля СлавьЯнИнъ">СлавьЯнИнъ</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_932_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 179</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=19  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=19%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=19"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_932">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg932  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg932#msg932%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg932#msg932" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #44 :</strong> Декабрь 07, 2012, 11:54:31 pm &#187;</div>
+									<div id="msg_932_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_932">Применено:<br />GOSUB(UPDATE_DATE)<br />print($_date_d,&quot;.&quot;,$_date_m,&quot;.&quot;,$_date_y)<br />GOSUB(UPDATE_DATE)<br />print($_date_d,&quot;.&quot;,$_date_m,&quot;.&quot;,$_date_y)<br /><br />получено:<br />1. Если время с 00:00 до 12:59 то <br />оба принта с правильным числом<br />2. Если время с 13:00 до 23:59 то<br />первый принт показывает число на 1 больше, а второй нормальное.<br /><br />Вот и гадать теперь где там эта ошибка ?? ((</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_932">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_932_signature">добрый смех равняет всех</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+		<div class="buttonlist floatright">
+			<ul>
+				<li><a class="button_strip_print" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0%27" tppabs="http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0" rel="new_win nofollow"><span class="last">Печать</span></a></li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Страницы: <a class="navPages" href="index.php-topic=33.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0">1</a> <a class="navPages" href="index.php-topic=33.15.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.15">2</a> [<strong>3</strong>] <a class="navPages" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.45  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.45%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.45">4</a> <a class="navPages" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.60  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.60%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.60">5</a> <span style="font-weight: bold;" onclick="expandPages(this, 'index.php-topic=33.%1$d.htm'/*tpa=http://crapware.aidf.org/forum/index.php?topic=33.%1$d*/, 75, 195, 15);" onmouseover="this.style.cursor='pointer';"> ... </span><a class="navPages" href="index.php-topic=33.195.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.195">14</a> </div>
+				<div class="nextlinks_bottom"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new">&laquo; предыдущая тема</a> <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new">следующая тема &raquo;</a></div>
+			</div>
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php"><span>Автокликер Clickermann :: Форум</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php.htm#c1" tppabs="http://crapware.aidf.org/forum/index.php#c1"><span>Основной раздел</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php-board=1.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?board=1.0"><span>Общие вопросы</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="index.php-topic=33.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0"><span>Типовые алгоритмы, вводные статьи (Новички, читайте!)</span></a>
+			</li>
+		</ul>
+	</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+				<script type="text/javascript" src="topic.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					var oQuickReply = new QuickReply({
+						bDefaultCollapsed: true,
+						iTopicId: 33,
+						iStart: 30,
+						sScriptUrl: smf_scripturl,
+						sImagesUrl: "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default/images*/,
+						sContainerId: "quickReplyOptions",
+						sImageId: "quickReplyExpand",
+						sImageCollapsed: "collapse-1.gif"/*tpa=http://crapware.aidf.org/forum/collapse.gif*/,
+						sImageExpanded: "expand.gif"/*tpa=http://crapware.aidf.org/forum/expand.gif*/,
+						sJumpAnchor: "quickreply"
+					});
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 33,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="d3b349eb410" value="a7172b9ddd58b454b887154219817082" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="33" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Сохранить" tabindex="2" onclick="return oQuickModify.modifySave(\'a7172b9ddd58b454b887154219817082\', \'d3b349eb410\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Отменить" tabindex="3" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="4" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://crapware.aidf.org/forum/index.php'+'?topic=33.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Тема: %subject% &nbsp;(Прочитано 116612 раз)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Перейти в:<" + "/label> %dropdown_list%",
+							iCurBoardId: 1,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Общие вопросы",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "да"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 1,
+							iTopicId: 33,
+							sSessionId: "a7172b9ddd58b454b887154219817082",
+							sSessionVar: "d3b349eb410",
+							sLabelIconList: "Иконка сообщения",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		</div>
+	</div></div>
+	<div id="footer_section"><div class="frame">
+		<ul class="reset">
+			<li class="copyright">
+			<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="index.php-action=credits.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=credits" title="Simple Machines Forum" target="_blank" class="new_win">SMF 2.0.2</a> |
+ <a href="javascript:if(confirm(%27http://www.simplemachines.org/about/smf/license.php  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.simplemachines.org/about/smf/license.php%27" tppabs="http://www.simplemachines.org/about/smf/license.php" title="License" target="_blank" class="new_win">SMF &copy; 2011</a>, <a href="javascript:if(confirm(%27http://www.simplemachines.org/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.simplemachines.org/%27" tppabs="http://www.simplemachines.org/" title="Simple Machines" target="_blank" class="new_win">Simple Machines</a>
+			</span></li>
+			<li><a id="button_xhtml" href="javascript:if(confirm(%27http://validator.w3.org/check?uri=referer  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://validator.w3.org/check?uri=referer%27" tppabs="http://validator.w3.org/check?uri=referer" target="_blank" class="new_win" title="Valid XHTML 1.0!"><span>XHTML</span></a></li>
+			<li><a id="button_rss" href="index.php-action=.xml;type=rss" tppabs="http://crapware.aidf.org/forum/index.php?action=.xml;type=rss" class="new_win"><span>RSS</span></a></li>
+			<li class="last"><a id="button_wap2" href="index.php-wap2.htm" tppabs="http://crapware.aidf.org/forum/index.php?wap2" class="new_win"><span>Мобильная версия</span></a></li>
+			<li>
+			 <!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t26.5;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: �������� ����� ����������� ��"+
+" �������' "+
+"border=0 width=88 height=15></a>")//--></script><!--/LiveInternet-->
+			</li>
+			
+		</ul>
+	</div></div>
+</div>
+</body></html>

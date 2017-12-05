@@ -1,0 +1,1072 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css-fin20.css" tppabs="http://crapware.aidf.org/forum/Themes/default/css/index.css?fin20" />
+	<link rel="stylesheet" type="text/css" href="ie7.css" tppabs="http://crapware.aidf.org/forum/Themes/default/css/ie7.css" />
+	<script type="text/javascript" src="script.js-fin20.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/script.js?fin20"></script>
+	<script type="text/javascript" src="theme.js-fin20.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/theme.js?fin20"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default*/;
+		var smf_default_theme_url = "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default*/;
+		var smf_images_url = "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default/images*/;
+		var smf_scripturl = "index.php.htm"/*tpa=http://crapware.aidf.org/forum/index.php*/;
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Загружается...";
+		var ajax_notification_cancel_text = "Отменить";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Типовые алгоритмы, вводные статьи (Новички, читайте!)" />
+	<meta name="keywords" content="кликер, автокликер, скрипт, макрос, сценарий, программирование, clickermann, clicker, чит, бот, игры, программы, l2, л2, скачать кликер, кликер мыши, бесплатно" />
+	<title>Типовые алгоритмы, вводные статьи (Новички, читайте!)</title>
+	<link rel="canonical" href="http://crapware.aidf.org/forum/index.php?topic=33.15" />
+	<link rel="help" href="http://crapware.aidf.org/forum/index.php?action=help" />
+	<link rel="search" href="http://crapware.aidf.org/forum/index.php?action=search" />
+	<link rel="contents" href="http://crapware.aidf.org/forum/index.php" />
+	<link rel="alternate" type="application/rss+xml" title="Автокликер Clickermann :: Форум - RSS" href="http://crapware.aidf.org/forum/index.php?type=rss;action=.xml" />
+	<link rel="prev" href="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev" />
+	<link rel="next" href="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next" />
+	<link rel="index" href="http://crapware.aidf.org/forum/index.php?board=1.0" />
+</head>
+<body>
+<div id="wrapper" style="width: 90%">
+	<div id="header"><div class="frame">
+		<div id="top_section">
+			<h1 class="forumtitle">
+				<a href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php">Автокликер Clickermann :: Форум</a>
+			</h1>
+			<img id="upshrink" src="upshrink.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/upshrink.png" alt="*" title="Свернуть/Развернуть" style="display: none;" />
+			<img id="smflogo" src="smflogo.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/smflogo.png" alt="Simple Machines Forum" title="Simple Machines Forum" />
+		</div>
+		<div id="upper_section" class="middletext">
+			<div class="user">
+				<script type="text/javascript" src="sha1.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/sha1.js"></script>
+				<form id="guest_form" action="http://crapware.aidf.org/forum/index.php?action=login2" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, 'a7172b9ddd58b454b887154219817082');">
+					<div class="info">Добро пожаловать, <strong>Гость</strong>. Пожалуйста, <a href="index.php-action=login.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=login">войдите</a> или <a href="index.php-action=register.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=register">зарегистрируйтесь</a>.</div>
+					<input type="text" name="user" size="10" class="input_text" />
+					<input type="password" name="passwrd" size="10" class="input_password" />
+					<select name="cookielength">
+						<option value="60">1 час</option>
+						<option value="1440">1 день</option>
+						<option value="10080">1 неделя</option>
+						<option value="43200">1 месяц</option>
+						<option value="-1" selected="selected">Навсегда</option>
+					</select>
+					<input type="submit" value="Вход" class="button_submit" /><br />
+					<div class="info"></div>
+					<input type="hidden" name="hash_passwrd" value="" />
+				</form>
+			</div>
+			<div class="news normaltext">
+				<form id="search_form" action="http://crapware.aidf.org/forum/index.php?action=search2" method="post" accept-charset="UTF-8">
+					<input type="text" name="search" value="" class="input_text" />&nbsp;
+					<input type="submit" name="submit" value="Поиск" class="button_submit" />
+					<input type="hidden" name="advanced" value="0" />
+					<input type="hidden" name="topic" value="33" /></form>
+				<h2>Новости: </h2>
+				<p>Добавлена <strong>тема оформления &quot;Clickermann&quot;</strong> для кода с подсветкой синтаксиса. Выбирается из выпадающего списка &quot;Код&quot; (рядом с &quot;цвет&quot;, &quot;размер&quot; и &quot;шрифт&quot;) в режиме редактирования поста. Либо просто BB-тегом &quot;code=clickermann&quot;</p>
+			</div>
+		</div>
+		<br class="clear" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var oMainHeaderToggle = new smc_Toggle({
+				bToggleEnabled: true,
+				bCurrentlyCollapsed: false,
+				aSwappableContainers: [
+					'upper_section'
+				],
+				aSwapImages: [
+					{
+						sId: 'upshrink',
+						srcExpanded: smf_images_url + '/upshrink.png',
+						altExpanded: 'Свернуть/Развернуть',
+						srcCollapsed: smf_images_url + '/upshrink2.png',
+						altCollapsed: 'Свернуть/Развернуть'
+					}
+				],
+				oThemeOptions: {
+					bUseThemeSettings: false,
+					sOptionName: 'collapse_header',
+					sSessionVar: 'd3b349eb410',
+					sSessionId: 'a7172b9ddd58b454b887154219817082'
+				},
+				oCookieOptions: {
+					bUseCookie: true,
+					sCookieName: 'upshrink'
+				}
+			});
+		// ]]></script>
+		<div id="main_menu">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home">
+					<a class="active firstlevel" href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php">
+						<span class="last firstlevel">Начало</span>
+					</a>
+				</li>
+				<li id="button_help">
+					<a class="firstlevel" href="index.php-action=help.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=help">
+						<span class="firstlevel">Помощь</span>
+					</a>
+				</li>
+				<li id="button_search">
+					<a class="firstlevel" href="index.php-action=search.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=search">
+						<span class="firstlevel">Поиск</span>
+					</a>
+				</li>
+				<li id="button_login">
+					<a class="firstlevel" href="index.php-action=login.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=login">
+						<span class="firstlevel">Вход</span>
+					</a>
+				</li>
+				<li id="button_register">
+					<a class="firstlevel" href="index.php-action=register.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=register">
+						<span class="last firstlevel">Регистрация</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<br class="clear" />
+	</div></div>
+	<div id="content_section"><div class="frame">
+		<div id="main_content_section">
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php"><span>Автокликер Clickermann :: Форум</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php.htm#c1" tppabs="http://crapware.aidf.org/forum/index.php#c1"><span>Основной раздел</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php-board=1.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?board=1.0"><span>Общие вопросы</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="index.php-topic=33.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0"><span>Типовые алгоритмы, вводные статьи (Новички, читайте!)</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg562"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new">&laquo; предыдущая тема</a> <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new">следующая тема &raquo;</a></div>
+		<div class="buttonlist floatright">
+			<ul>
+				<li><a class="button_strip_print" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0%27" tppabs="http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0" rel="new_win nofollow"><span class="last">Печать</span></a></li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Страницы: <a class="navPages" href="index.php-topic=33.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0">1</a> [<strong>2</strong>] <a class="navPages" href="index.php-topic=33.30.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.30">3</a> <a class="navPages" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.45  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.45%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.45">4</a> <span style="font-weight: bold;" onclick="expandPages(this, 'index.php-topic=33.%1$d.htm'/*tpa=http://crapware.aidf.org/forum/index.php?topic=33.%1$d*/, 60, 195, 15);" onmouseover="this.style.cursor='pointer';"> ... </span><a class="navPages" href="index.php-topic=33.195.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.195">14</a> </div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="veryhot_post_sticky.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/topic/veryhot_post_sticky.gif" align="bottom" alt="" />
+						<span id="author">Автор</span>
+						Тема: Типовые алгоритмы, вводные статьи (Новички, читайте!) &nbsp;(Прочитано 116612 раз)
+					</h3>
+				</div>
+				<p id="whoisviewing" class="smalltext">0 Пользователей и 3 Гостей просматривают эту тему.
+				</p>
+				<form action="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=quickmod2;topic=33.15  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=quickmod2;topic=33.15%27" tppabs="http://crapware.aidf.org/forum/index.php?action=quickmod2;topic=33.15" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('a7172b9ddd58b454b887154219817082', 'd3b349eb410') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29" title="Просмотр профиля Dr_midon">Dr_midon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_562_extra_info">
+								<li class="postgroup">Освоившийся</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 30</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_562">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg562  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg562#msg562%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg562#msg562" rel="nofollow">Re: Типовые алгоритмы</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #15 :</strong> Ноябрь 04, 2012, 02:04:37 am &#187;</div>
+									<div id="msg_562_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_562">Доброго времени суток!<br /><br />Решил показать, как пользоваться WinAPI функцией<br /><strong>POSTMESSAGE (hwnd, message, wParam, lParam)</strong><br /><br /><span style="font-size: 14pt;" class="bbc_size"><span class="bbc_u">Что это такое?</span></span><br /><strong>Windows API</strong> (англ. application programming interfaces) — общее наименование целого набора базовых функций интерфейсов программирования приложений операционных систем семейств Microsoft Windows. Или по простому - базовый язык наших любимых окошек(Windows). Остальные языки программирования делают свои функции и процедуры из WinAPI или используют его на прямую.<br /><br /><strong>POSTMESSAGE</strong> — функция помещает сообщение в очередь.<br /><br /><span style="font-size: 14pt;" class="bbc_size"><span class="bbc_u">Зачем нам оно?</span></span><br />Количество функций Clickermann`а неуклонно продолжает расти, но необходимо очень много времени, чтоб можно было сделать свои обертки на все функции Windows. А теперь, когда появилась эта функция мы можем на прямую работать с интерфейсами окошек. И использовать максимум функционала.<br /><br /><span style="font-size: 14pt;" class="bbc_size"><span class="bbc_u">Ставим задачу</span></span><br />Нужно написать код, чтоб можно было кликать в окошке, которое находится позади других.<br />Невозможно, скажете вы и ошибетесь <img src="grin.gif" tppabs="http://crapware.aidf.org/forum/Smileys/default/grin.gif" alt=";D" title="Усмешка" class="smiley" /> . Потому, как мы не будем эмулировать клик мыши, а станем посылать сообщение окну, в котором должен быть произведен клик. Нужно это для разных случаев, но мне пригодилось во флеш игре, в которой необходимо кликать мышкой каждую минуту(даже сейчас она кликает, нервно помигивая кнопкой на панели задач, пока я пишу эту статью).<br /><br /><span style="font-size: 14pt;" class="bbc_size"><span class="bbc_u">Что нам понадобится</span></span><br />нам понадобится сама функция<br />PostMessage(<br />&nbsp; &nbsp; HWND <strong>hWnd</strong>,<br />&nbsp; &nbsp; UINT <strong>Msg</strong>,<br />&nbsp; &nbsp; WPARAM <strong>wParam</strong>,<br />&nbsp; &nbsp; LPARAM <strong>lParam</strong><br />);<br /><br /><strong>hWnd</strong> - Дескриптор окна(грубо говоря - адрес), оконная процедура которого должна принять сообщение.<br />Если подробнее, то кнопки, поля для ввода текста, раскрывающиеся списки, меню и т.д. - это и есть окна(с точки зрения Микрософт), а не только прямоугольная форма с крестиком, квадратиком и палочкой в правом верхнем углу(как думают большинство). И у каждого этого элемента есть свой hWnd. Означает, что нам нужно мышкой указывать не на форму, в которой находится кнопка, а именно на кнопку, у которой пытаемся узнать hWnd.<br /><br /><strong>Msg</strong> - Сообщение, которое должно быть поставлено в очередь. Сообщение цифровое и писать мы будем его цифрами. Есть куча сообщений, которые могут приходить окну. Вот небольшой список:<br /><span style="font-family: courier;" class="bbc_font"><span style="font-size: 8pt;" class="bbc_size">wm_LButtonDblClk, wm_LButtonDown, wm_LButtonUp, wm_MButtonDblClk, wm_MButtonDown, wm_MButtonUp, wm_MouseMove, wm_NCLButtonDown, wm_NCLButtonUp, wm_NCLButtonDblClk, wm_NCMButtonDown, wm_NCMButtonDblClk, wm_NCMouseMove, wm_NCRButtonDown, wm_NCRButtonUp, wm_NCRButtonDblClk, wm_RButtonDown, wm_RButtonUp, wm_RButtonDblClk и т.п.</span></span><br />И каждому такому сообщению выдан свой код(0x0201 — означает шестнадцатиричный вид, например 0x0201 = 513):<br /><div class="codeheader">Код: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Выделить]</a></div><code class="bbc_code">WM_LBUTTONDOWN&nbsp; &nbsp;=&nbsp; 0x0201&nbsp; // Левая кнопка мыши нажата.<br />WM_LBUTTONUP&nbsp; &nbsp; &nbsp;=&nbsp; 0x0202&nbsp; // Левая кнопка мыши отпущена.<br /><br />WM_RBUTTONDOWN&nbsp; &nbsp;=&nbsp; 0x0204&nbsp; // Правая кнопка мыши нажата.<br />WM_RBUTTONUP&nbsp; &nbsp; &nbsp;=&nbsp; 0x0205&nbsp; // Правая кнопка мыши отпущена.<br /><br />WM_MOUSEMOVE&nbsp; &nbsp; &nbsp;=&nbsp; 0x0200&nbsp; // Мышь передвинута.<br /><br />WM_MOUSEWHEEL&nbsp; &nbsp; =&nbsp; 0x020A&nbsp; // Кручение колесика мыши.<br /></code><br /><strong>wParam</strong> и <strong>lParam</strong> - Это 32-битовые парaметры. Для каждого случая свои. Но в нашем случае в первом параметре задается нажатые кнопки(если нажато несколько кнопок то они складываются, например нажаты вместе SHIFT и левая кнопка мыши — 0x0004 + 0x0001 = 0x0005):<br /><br /><div class="codeheader">Код: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Выделить]</a></div><code class="bbc_code">MK_LBUTTON&nbsp; =&nbsp; 0x0001&nbsp; // Левая кнопка мыши находится в нажатом состоянии.<br />MK_RBUTTON&nbsp; =&nbsp; 0x0002&nbsp; // Правая кнопка мыши находится в нажатом состоянии.<br />MK_SHIFT&nbsp; &nbsp; =&nbsp; 0x0004&nbsp; // Клавиша SHIFT находится в нажатом состоянии.<br />MK_CONTROL&nbsp; =&nbsp; 0x0008&nbsp; // Клавиша CTRL находится в нажатом состоянии.<br />MK_MBUTTON&nbsp; =&nbsp; 0x0010&nbsp; // Средняя кнопка мыши находится в нажатом состоянии.<br />MK_XBUTTON1 =&nbsp; 0x0020&nbsp; // Windows 2000/XP: Первая X-кнопка находится в нажатом состоянии.<br />MK_XBUTTON2 =&nbsp; 0x0040&nbsp; // Windows 2000/XP: Вторая X-кнопка находится в нажатом состоянии.<br /></code>Мышкины события и их коды описаны в MSDN(en)<br /><a href="javascript:if(confirm(%27http://msdn.microsoft.com/en-us/library/windows/desktop/ff468877(v=vs.85).aspx  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://msdn.microsoft.com/en-us/library/windows/desktop/ff468877(v=vs.85).aspx%27" tppabs="http://msdn.microsoft.com/en-us/library/windows/desktop/ff468877(v=vs.85).aspx" class="bbc_link" target="_blank">http://msdn.microsoft.com/en-us/library/windows/desktop/ff468877(v=vs.85).aspx</a><br />Клавиатурные события и их коды описаны в MSDN(en)<br /><a href="javascript:if(confirm(%27http://msdn.microsoft.com/en-us/library/windows/desktop/ff468861(v=vs.85).aspx  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://msdn.microsoft.com/en-us/library/windows/desktop/ff468861(v=vs.85).aspx%27" tppabs="http://msdn.microsoft.com/en-us/library/windows/desktop/ff468861(v=vs.85).aspx" class="bbc_link" target="_blank">http://msdn.microsoft.com/en-us/library/windows/desktop/ff468861(v=vs.85).aspx</a><br /><br />А во втором параметре координаты курсора мыши. Как же можно в одном числе записать 2 значения <strong>X</strong> и <strong>Y</strong>? Давольно просто: используя 32 битную операционную систему можно в первых 16 битах передавать <strong>Y</strong>, а во второй части — <strong>X</strong>. Например координаты (<span style="color: red;" class="bbc_color">123</span> , <span style="color: blue;" class="bbc_color">456</span>) в шестнадцатиричнном виде будут выглядеть как (<span style="color: red;" class="bbc_color">0x007B</span> , <span style="color: blue;" class="bbc_color">0x01C8</span>) и мы получим параметер <strong>lParam</strong> = 0x<span style="color: red;" class="bbc_color">01C8</span><span style="color: blue;" class="bbc_color">007B</span> или в десятичном будет непойми что 29 884 539 = 123 + 456 * 65536. Откуда взялась цифра 65536 оставлю на домашнее задание(подсказка: 256*256=65536, 256 — BYTE, 65536 — WORD)<br /><br /><span style="font-size: 14pt;" class="bbc_size"><span class="bbc_u">Практика</span></span><br />Вы дочитали до этих строк и не бросили это нудное дело? Тогда хвала Вам и почет, о любимый мой читатель. А еще лэвэл ап и новый скилл. Копируем и вставляем в Clickermann следующее:<br /><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$WM_LBUTTONDOWN</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">0x0201</span> <span style="color: #008000; font-style: italic;">// Левая кнопка мыши нажата.</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$WM_LBUTTONUP</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">0x0202</span> <span style="color: #008000; font-style: italic;">// Левая кнопка мыши отпущена.</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$MK_LBUTTON</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">0x0001</span> <span style="color: #008000; font-style: italic;">// Левая кнопка мыши находится в нажатом состоянии.</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$HWND</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">16515858</span> <span style="color: #008000; font-style: italic;">// изменяется при каждом запуске целевой программы,</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #008000; font-style: italic;">// нужно каждый раз вписывать заного</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$x</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">100</span> <span style="color: #008000; font-style: italic;">// Координата по X</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$y</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">100</span> <span style="color: #008000; font-style: italic;">// Координата по Y</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">//Отправляем сообщение окну о нажатой левой кнопке мыши</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">postmessage</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWND</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$WM_LBUTTONDOWN</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$MK_LBUTTON</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$x</span> <span style="color: #000000;">+</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$y</span><span style="color: #000000;">*</span><span style="color: #0000ff;">65536</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">//Мало-мало ждем, а можно и вообще не ждать,</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// &nbsp; т.к. сообщения уходят в список и выполняются по порядку</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">waitms</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">50</span><span style="color: #000000;">&#41;</span> </div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">//Отправляем сообщение окну, что левую кнопку мыши отпустили</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">postmessage</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWND</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$WM_LBUTTONUP</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$MK_LBUTTON</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$x</span> <span style="color: #000000;">+</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$y</span><span style="color: #000000;">*</span><span style="color: #0000ff;">65536</span><span style="color: #000000;">&#41;</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Завершаем программу</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">halt</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li></ol></pre><br />Запускаем mspaint — стандартную рисовалку Windows, наводим мышь на белый холст и наблюдаем в редакторе кода за <strong>hWND</strong>. Пишем свое число вместо моего <strong>$HWND =</strong> и запускаем скрипт(Clickermann). Все. Теперь на холсте паинта стоит точка на расстоянии 100 пикселей от левого края <strong>холста</strong>(а не экрана!!!) и 100 пикселей от правого.<br /><br /><span style="font-size: 14pt;" class="bbc_size"><span class="bbc_u">Эпилог</span></span><br />В браузерах обычно сам сайт и все, что в нем есть имеет один hWND. И высчитав количество пикселей сверху, которое занимает панели браузера можно к <strong>Y</strong> дописать <strong>$y = 100-61</strong> (61 - высота панели хрома) и задавать координаты без вычислений, но при условии, что форма развернута на весь экран. Если двигать форму по всему экрану то прийдется каждый раз пересчитывать координаты. Т.к. все элементы будут содержать собственные координаты. И угол (0,0) - это не угол экрана в данном случае, а верхний левый угол элемента(будь то кнопка, или поле для ввода текста, или страница в браузере - прокручивание не влияет на координаты на экране монитора).<br />Удачи!</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_562">
+								&#171; <em>Последнее редактирование: Ноябрь 26, 2016, 08:49:58 am от Oraven</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg567"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1" title="Просмотр профиля Johnny">Johnny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_567_extra_info">
+								<li class="membergroup">Создатель</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="adm.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/adm.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1">
+										<img class="avatar" src="index.php-action=dlattach;attach=359;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=359;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 454</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=1.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=1"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_567">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg567  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg567#msg567%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg567#msg567" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #16 :</strong> Ноябрь 04, 2012, 11:32:16 am &#187;</div>
+									<div id="msg_567_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_567">молодец. добавил в оп-пост. учитесь, господа<br />можно еще добавить ссылки на MSDN, там есть все коды событий и флагов</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_567">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg637"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29" title="Просмотр профиля Dr_midon">Dr_midon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_637_extra_info">
+								<li class="postgroup">Освоившийся</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 30</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="clip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/clip.gif" alt="" />
+									</div>
+									<h5 id="subject_637">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg637  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg637#msg637%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg637#msg637" rel="nofollow">Привязка к окну</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #17 :</strong> Ноябрь 07, 2012, 12:06:48 pm &#187;</div>
+									<div id="msg_637_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_637">Доброго времени суток!<br /><br />Сегодня поговорим о привязке к окну. В предыдущей статье шла речь о WinApi, но не о привязке к окнам. Хотя можно использовать и WinApi, но есть ряд существенных недостатков. Реализация(написание) скриптов при помощи привязки гораздо проще, т.к. достаточно вставить <strong>lclick(x, y)</strong> (можно это сделать даже при помощи сочетания ALT+Q) и не нужно громоздить остального кода, включая расчет координат.<br /><br /><span style="font-size: 14pt;" class="bbc_size"><span class="bbc_u">Зачем нам оно?</span></span><br />Привязка к окну помогает кликать в окно, даже когда оно свернуто. Также можно свернуть и clickermann. Это значит, что нам можно заниматься своими делами, пока работает кликер. И он нам не будет мешаться.<br /><br /><span style="font-size: 14pt;" class="bbc_size"><span class="bbc_u">Ставим задачу</span></span><br />Будем учиться на простом примере: кликать в свернутый <strong>Paint</strong>(он у каждого в системе есть, стандартная программа). Делать будем не одиночный клик, а нам надо занять рисовалку, пока мы будем проделывать различные действия с окнами. Т.к. тут необходимо уяснить принцип действия, а написание дальнейшего скрипта не будет отличаться от нормального режима.<br /><br /><span style="font-size: 14pt;" class="bbc_size"><span class="bbc_u">Что нам понадобится</span></span><br />1. <strong>Clickermann 4.7</strong><br />2. <strong>Paint</strong>(можно запустить нажав на клавиатуре <strong>WIN+R </strong>и введя в появившееся окно <strong>mspaint</strong>, а затем Enter)<br />3. <strong>Скрипт</strong>(можно будет скопировать мой <strong>Цветок.cms</strong>, для примера работы)<br /><br />Скрипт небольшой, можно и продублировать:<br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">#name <span style="color: #800080;">&quot;Цветок&quot;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #008000; font-style: italic;">// Скрипт, рисующий(в паинте) цветок</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$r</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">100</span> <span style="color: #008000; font-style: italic;">// Радиус</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$f</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">24</span> &nbsp;<span style="color: #008000; font-style: italic;">// Форм фактор</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$i</span> <span style="color: #000000;">=</span> <span style="color:#800080;">0.3</span> <span style="color: #008000; font-style: italic;">// Смещение начала</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">while</span><span style="color: #000000;">&#40;</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$i</span><span style="color: #000000;">*</span><span style="color: #0000ff;">100</span><span style="color: #000000;">&#41;</span> <span style="color: #000000;">&lt;</span> <span style="color: #0000ff;">1640</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// Начало цикла.</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #008000; font-style: italic;">// Заглушка для проверки дробей</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">	<span style="color: #0000ff;">$x</span> <span style="color: #000000;">=</span> <span style="color: #000080;">cos</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$i</span><span style="color: #000000;">*</span><span style="color: #0000ff;">$f</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// переход от полярных координат </span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">	<span style="color: #0000ff;">$y</span> <span style="color: #000000;">=</span> <span style="color: #000080;">sin</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$i</span><span style="color: #000000;">*</span><span style="color: #0000ff;">$f</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// к декартовым</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">	<span style="color: #0000ff;">$x</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$x</span> <span style="color: #000000;">*</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$r</span><span style="color: #000000;">-</span><span style="color: #0000ff;">$i</span><span style="color: #000000;">*</span><span style="color: #0000ff;">$f</span><span style="color: #000000;">/</span><span style="color: #0000ff;">2</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// Придание формы &nbsp;спирали</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">	<span style="color: #0000ff;">$y</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$y</span> <span style="color: #000000;">*</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$r</span><span style="color: #000000;">-</span><span style="color: #0000ff;">$i</span><span style="color: #000000;">*</span><span style="color: #0000ff;">$f</span><span style="color: #000000;">/</span><span style="color: #0000ff;">2</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// и задание размера</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp;<span style="color: #0000ff;">$x</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$x</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">100</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">$r</span> <span style="color: #008000; font-style: italic;">// Центрование</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp;<span style="color: #0000ff;">$y</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$y</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">100</span> <span style="color: #000000;">+</span> <span style="color: #0000ff;">$r</span> <span style="color: #008000; font-style: italic;">// на холсте</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp;<span style="color: #0000ff;">$x</span> <span style="color: #000000;">=</span> <span style="color: #000080;">round</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$x</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// &nbsp;Округление координат</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp;<span style="color: #0000ff;">$y</span> <span style="color: #000000;">=</span> <span style="color: #000080;">round</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$y</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// &nbsp;Иначе клика не получим</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp;<span style="color: #000080;">lclick</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$x</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">$y</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// Сам клик</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp;<span style="color: #000080;">waitms</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">50</span><span style="color: #000000;">&#41;</span> &nbsp;<span style="color: #008000; font-style: italic;">// Пауза: разгружает процессор</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp;<span style="color: #0000ff;">$i</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">$i</span> <span style="color: #000000;">+</span> <span style="color:#800080;">0.02</span> &nbsp;<span style="color: #008000; font-style: italic;">// следующая полярная координата</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">end_cyc</span> &nbsp;<span style="color: #008000; font-style: italic;">// Окончание цикла</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">halt</span> <span style="color: #008000; font-style: italic;">// Точка выхода из скрипта</span></div></li></ol></pre><br /><span style="font-size: 14pt;" class="bbc_size"><span class="bbc_u">Практика</span></span><br />Все достаточно просто, можно разбить всю задачу на 4 пункта:<br />1. Открываем Paint<br />2. Открываем фаил Цветок.cms(либо жмем на кнопочку <strong>РЕДАКТОР</strong> туда вставляем, нажимаем применить и закрываем редактор)<br />3. В программе Paint мышкой наводим на белый холст будущего рисунка и нажимаем на клавиатуре ALT+W. При этом в окне Clickermann`a должна появиться надпись <span style="color: green;" class="bbc_color"><strong>вкл</strong></span> напротив строчки <strong>Статус:</strong> в группе <strong>Привязка к окну</strong>.<br />4. Запускаем Clickermann, нажав на зеленую кнопочку, или на клавиатуре ALT+A<br /><br />Все, теперь программа работает и мы можем перекрыть окно паинта другим окном или вовсе свернуть. Скрипт продолжит работу в любом случае.<br /><br /><span style="font-size: 14pt;" class="bbc_size"><span class="bbc_u">Эпилог</span></span><br />Теперь Вы можете не загораживать экран окном, в котором работает Clickermann. Достаточно просто свернуть их и делать любые другие действия, кроме нажатия на горячие клавиши старта/стопа(ALT+A / ALT+S). Также не забываем отлаживать скрипты, прежде чем их помещать на задний план. Они должны отработать стабильно(без ошибок) несколько десятков раз на Ваших глазах.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_637">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg640"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10" title="Просмотр профиля Сергей">Сергей</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_640_extra_info">
+								<li class="postgroup">Активный участник</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10">
+										<img class="avatar" src="Nirvana.jpg" tppabs="http://crapware.aidf.org/forum/avatars/Musicians/Nirvana.jpg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 159</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=10  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=10%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=10"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_640">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg640  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg640#msg640%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg640#msg640" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #18 :</strong> Ноябрь 07, 2012, 03:38:10 pm &#187;</div>
+									<div id="msg_640_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_640">Хе-хе, красиво получилось!</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_640">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_640_signature">Отсутствую.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg641"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17" title="Просмотр профиля ЦИТРИН">ЦИТРИН</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_641_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17">
+										<img class="avatar" src="index.php-action=dlattach;attach=30;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=30;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 485</li>
+								<li class="blurb">Марафон опавших листьев, коктейль из дыма и мыслей</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_641">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg641  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg641#msg641%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg641#msg641" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #19 :</strong> Ноябрь 07, 2012, 03:59:51 pm &#187;</div>
+									<div id="msg_641_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_641"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg640  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg640#msg640%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg640#msg640">Цитата: Сергей от Ноябрь 07, 2012, 03:38:10 pm</a></div></div><blockquote class="bbc_standard_quote">Хе-хе, красиво получилось!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Красиво )<br />Пара вопросов от нуба.<br />Нельзя ли из&nbsp; самого скрипта пейнт&nbsp; вызвать ,&nbsp; плюс растянуть его холст на нужный размер?<br />Как сделать&nbsp; например&nbsp; цветные спирали ?</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_641">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_641_signature">Бабочки полёт будит тихую поляну в солнечном свету...</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg645"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29" title="Просмотр профиля Dr_midon">Dr_midon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_645_extra_info">
+								<li class="postgroup">Освоившийся</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 30</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_645">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg645  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg645#msg645%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg645#msg645" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #20 :</strong> Ноябрь 07, 2012, 07:55:40 pm &#187;</div>
+									<div id="msg_645_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_645">Статья была предназначена для разрешения вопросов по привязке к окну и работе в фоновом режиме. Если заинтересовал рисованием тригонометрических графиков то можно погуглить на слова: циклоида, эпициклоида, гипоциклоида, фрактал<br /><br /><a href="javascript:if(confirm(%27http://www.delphigfx.narod.ru/2d/009/2d_9.htm  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.delphigfx.narod.ru/2d/009/2d_9.htm%27" tppabs="http://www.delphigfx.narod.ru/2d/009/2d_9.htm" class="bbc_link" target="_blank">http://www.delphigfx.narod.ru/2d/009/2d_9.htm</a><br /><a href="javascript:if(confirm(%27http://www.megabook.ru/MediaViewer.asp?RNode=4024&MID=453982  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.megabook.ru/MediaViewer.asp?RNode=4024&MID=453982%27" tppabs="http://www.megabook.ru/MediaViewer.asp?RNode=4024&MID=453982" class="bbc_link" target="_blank">http://www.megabook.ru/MediaViewer.asp?RNode=4024&amp;MID=453982</a><br /><br />2 ЦИТРИН:<br />Попробуй сам реализовать - это же интересно&nbsp; <img src="wink.gif" tppabs="http://crapware.aidf.org/forum/Smileys/default/wink.gif" alt=";&#41;" title="Подмигивающий" class="smiley" /><br />Можно использовать следующие функции:<br /><br /><strong>EXECUTE (&quot;filename&quot;, [&quot;param&quot;])</strong> - вызывает внешний файл <br />Параметры <br />filename - имя файла<br />param - необязательный параметр; строка параметров<br /><br /><strong>WNDFIND (&quot;title&quot;, [begin])</strong> - числовая функция; возвращает HWND окна с заданным заголовком <br />Параметры <br />title - заголовок окна либо его часть<br />begin - необязательный параметр; флаг сообщает о том что строка title может находиться ТОЛЬКО в начале заголовка<br /><br /><strong>WNDPOS (hwnd, x, y)</strong> - помещает окно на экране в указанные координаты <br />Параметры <br />hwnd - HWND окна<br />x,y - экранные координаты <br /><br /><strong>WNDSIZE (hwnd, w, h)</strong> - задает размер окна <br />Параметры <br />hwnd - HWND окна<br />w,h - ширина, высота окна<br /><br />А также можно сказать, что элементы там не передвигаются и статично стоят на своих местах. Остается только найти их координаты при помощи положения и размеров окна.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_645">
+								&#171; <em>Последнее редактирование: Ноябрь 08, 2012, 11:34:26 pm от Dr_midon</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg649"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17" title="Просмотр профиля ЦИТРИН">ЦИТРИН</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_649_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17">
+										<img class="avatar" src="index.php-action=dlattach;attach=30;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=30;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 485</li>
+								<li class="blurb">Марафон опавших листьев, коктейль из дыма и мыслей</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_649">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg649  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg649#msg649%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg649#msg649" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #21 :</strong> Ноябрь 07, 2012, 08:49:57 pm &#187;</div>
+									<div id="msg_649_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_649"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg645  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg645#msg645%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg645#msg645">Цитата: Dr_midon от Ноябрь 07, 2012, 07:55:40 pm</a></div></div><blockquote class="bbc_standard_quote">2 ЦИТРИН:<br />Попробуй сам реализовать - это же интересно&nbsp; <img src="wink.gif" tppabs="http://crapware.aidf.org/forum/Smileys/default/wink.gif" alt=";&#41;" title="Подмигивающий" class="smiley" /><br />Можно использовать следующие функции:<br />WNDFIND <br />WNDPOS <br />WNDSIZE (hwnd, w, h)[/b] - задает размер окна <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Вы полагаете я не пробовал играть в&nbsp; эти команды?<br />Пробовал. <br />Ничего не вышло.<br />Если не затруднит, покажите алгоритм их использования , в 100% рабочем скрипте, с подробными&nbsp; пошаговыми комментариями . Тогда&nbsp; в аналогичной задаче ( скажем с фотошопом ) новичкам будет легче.<br />Заранее благодарен )</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_649">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_649_signature">Бабочки полёт будит тихую поляну в солнечном свету...</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg652"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=24  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=24%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=24" title="Просмотр профиля Ляпис">Ляпис</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_652_extra_info">
+								<li class="postgroup">Освоившийся</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=24  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=24%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=24">
+										<img class="avatar" src="index.php-action=dlattach;attach=49;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=49;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 35</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=24  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=24%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=24"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_652">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg652  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg652#msg652%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg652#msg652" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #22 :</strong> Ноябрь 08, 2012, 08:38:59 am &#187;</div>
+									<div id="msg_652_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_652">WNDFIND/POS/SIZE - это хорошо, а есть возможность сохранить и воспроизвести положение ползунков вертикальной и горизонтальной прокрутки содержимого окна?</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_652">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_652_signature"><tt class="bbc_tt">cmann4.7 se win8 slimbrowser intel core2duo<br />текущий проект - &quot;Зомби Ферма&quot; VK</tt></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg660"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29" title="Просмотр профиля Dr_midon">Dr_midon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_660_extra_info">
+								<li class="postgroup">Освоившийся</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 30</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_660">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg660  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg660#msg660%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg660#msg660" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #23 :</strong> Ноябрь 08, 2012, 11:55:12 pm &#187;</div>
+									<div id="msg_660_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_660">Написал небольшой скриптик, который реализует запуск, перемещение, изменение размеров окна и его кнопок, за испытуемого был выбран калькулятор. <br /><br /><div class="codeheader">Код: Clickermann</div><pre class="clickermann geshi" style="font-family:monospace;"><ol><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">#name <span style="color: #800080;">&quot;Windows change&quot;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$HWnd</span> <span style="color: #000000;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #008000; font-style: italic;">// Дескриптор окна(указатель на окно)</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">execute</span><span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;calc&quot;</span><span style="color: #000000;">&#41;</span> &nbsp;<span style="color: #008000; font-style: italic;">// Запускаем калькулятор</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">wait</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">1</span><span style="color: #000000;">&#41;</span> &nbsp; &nbsp;<span style="color: #008000; font-style: italic;">// Ждем 1 сек.</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #008000; font-style: italic;">// Если калькулятор запускается первый раз,</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #008000; font-style: italic;">// то немного надо подождать. Последующие разы будет</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #008000; font-style: italic;">// Запускаться мгновенно (так реализована память Windows)</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$HWnd</span> <span style="color: #000000;">=</span> <span style="color: #000080;">WNDFIND</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;Калькулятор Плюс&quot;</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// Пытаемся найти окно(в Windows XP)</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #008000; font-style: italic;">// Если не найдет то ошибки не покажет.</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #008000; font-style: italic;">// Но $HWnd будет равна нулю</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">if</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWnd</span> <span style="color: #000000;">&gt;</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span> &nbsp;<span style="color: #008000; font-style: italic;">// Проверяем нашлось ли окно</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WndPos</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWnd</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">200</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">200</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// Двигаем окно</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WaitMS</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">lClick</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">265</span><span style="color: #000000;">,</span><span style="color: #0000ff;">236</span><span style="color: #000000;">&#41;</span> &nbsp;<span style="color: #008000; font-style: italic;">// Кликаем в меню &quot;ВИД&quot;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WaitMS</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">lClick</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">288</span><span style="color: #000000;">,</span><span style="color: #0000ff;">257</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// Кликаем в меню &quot;ОБЫЧНЫЙ&quot; </span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WaitMS</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #008000; font-style: italic;">// Еще раз повторюсь: любой элемент формы - это окно</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #008000; font-style: italic;">// Значит мы можем двигать и менять размер не только формы,</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #008000; font-style: italic;">// но и кнопок на ней</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #0000ff;">$HWnd</span> <span style="color: #000000;">=</span> <span style="color: #000080;">hGet</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">270</span><span style="color: #000000;">,</span><span style="color: #0000ff;">300</span><span style="color: #000000;">&#41;</span> &nbsp;<span style="color: #008000; font-style: italic;">// Находим дескриптор кнопки &quot;Backspace&quot; в глобальных координатах 270,300</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WndSize</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWnd</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">36</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">29</span><span style="color: #000000;">&#41;</span> &nbsp; <span style="color: #008000; font-style: italic;">// Меняем ее размер в локальных координатах</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WaitMS</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #0000ff;">$HWnd</span> <span style="color: #000000;">=</span> <span style="color: #000080;">hGet</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">340</span><span style="color: #000000;">,</span><span style="color: #0000ff;">300</span><span style="color: #000000;">&#41;</span> &nbsp;<span style="color: #008000; font-style: italic;">// Находим дескриптор кнопки &quot;CE&quot; в глобальных координатах 340,300</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WndSize</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWnd</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">36</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">29</span><span style="color: #000000;">&#41;</span> &nbsp; <span style="color: #008000; font-style: italic;">// Меняем ее размер в локальных координатах</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WaitMS</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WndPos</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWnd</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">93</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">37</span><span style="color: #000000;">&#41;</span> &nbsp; <span style="color: #008000; font-style: italic;">// и местоположение в локальных координатах</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WaitMS</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #0000ff;">$HWnd</span> <span style="color: #000000;">=</span> <span style="color: #000080;">hGet</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">400</span><span style="color: #000000;">,</span><span style="color: #0000ff;">300</span><span style="color: #000000;">&#41;</span> &nbsp;<span style="color: #008000; font-style: italic;">// Находим дескриптор кнопки &quot;C&quot; в глобальных координатах </span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WndSize</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWnd</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">36</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">29</span><span style="color: #000000;">&#41;</span> &nbsp; <span style="color: #008000; font-style: italic;">// Меняем ее размер в локальных координатах</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WaitMS</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WndPos</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWnd</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">132</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">37</span><span style="color: #000000;">&#41;</span> &nbsp; <span style="color: #008000; font-style: italic;">// и местоположение в локальных координатах</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WaitMS</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">halt</span> <span style="color: #008000; font-style: italic;">// Точка выхода из скрипта</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">end_if</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #0000ff;">$HWnd</span> <span style="color: #000000;">=</span> <span style="color: #000080;">WNDFIND</span> <span style="color: #000000;">&#40;</span><span style="color: #800080;">&quot;Калькулятор&quot;</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// Окно не нашлось... Мб у Вас Win7 ?</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">if</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWnd</span> <span style="color: #000000;">&gt;</span> <span style="color: #0000ff;">0</span><span style="color: #000000;">&#41;</span> &nbsp;<span style="color: #008000; font-style: italic;">// Проверяем нашлось ли окно</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WndPos</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWnd</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">200</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">200</span><span style="color: #000000;">&#41;</span> <span style="color: #008000; font-style: italic;">// Двигаем окно</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WaitMS</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #0000ff;">$HWnd</span> <span style="color: #000000;">=</span> <span style="color: #000080;">hGet</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">250</span><span style="color: #000000;">,</span><span style="color: #0000ff;">280</span><span style="color: #000000;">&#41;</span> &nbsp;<span style="color: #008000; font-style: italic;">// Находим дескриптор поля ввода текста &nbsp;в глобальных координатах </span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WndSize</span> <span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWnd</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">100</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">50</span><span style="color: #000000;">&#41;</span> &nbsp; <span style="color: #008000; font-style: italic;">// Меняем его размер в локальных координатах</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WaitMS</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WndPos</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">$HWnd</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">60</span><span style="color: #000000;">,</span> <span style="color: #0000ff;">33</span><span style="color: #000000;">&#41;</span> &nbsp; <span style="color: #008000; font-style: italic;">// и местоположение в локальных координатах</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> &nbsp; <span style="color: #000080;">WaitMS</span><span style="color: #000000;">&#40;</span><span style="color: #0000ff;">500</span><span style="color: #000000;">&#41;</span></div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">end_if</span></div></li><li style="padding: 0 5px; background-color: #f9f9f9; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="padding: 0 5px; background-color: #fff; line-height: 16px; border-bottom: 1px solid #efefef; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000080;">halt</span> <span style="color: #008000; font-style: italic;">// Точка выхода из скрипта</span></div></li></ol></pre><br /><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg652  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg652#msg652%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg652#msg652">Цитата: Ляпис от Ноябрь 08, 2012, 08:38:59 am</a></div></div><blockquote class="bbc_standard_quote">а есть возможность сохранить и воспроизвести положение ползунков вертикальной и горизонтальной прокрутки содержимого окна?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />Стандартными средствами только анализировав картинку и сохранением в переменную смещения ползунка. Или в Photoshop`e посчитав, на сколько пикселей сместился ползунок, а затем при помощи связки LDOWN (x, y) -&gt; MOVE (x, y) -&gt; LUP (x, y) передвинуть его. Либо посылать ему сообщение <strong>SendMessage(hwnd, WM_HSCROLL, SB_THUMBPOSITION, 0)</strong> подробнее тут: <a href="javascript:if(confirm(%27http://msdn.microsoft.com/en-us/library/windows/desktop/bb787575(v=vs.85).aspx  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://msdn.microsoft.com/en-us/library/windows/desktop/bb787575(v=vs.85).aspx%27" tppabs="http://msdn.microsoft.com/en-us/library/windows/desktop/bb787575(v=vs.85).aspx" class="bbc_link" target="_blank">http://msdn.microsoft.com/en-us/library/windows/desktop/bb787575(v=vs.85).aspx</a><br />Не стандартными - писать отдельную DLL и с помощью ее это проделывать.<br />Других вариантов не придумал.<br /></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_660">
+								&#171; <em>Последнее редактирование: Ноябрь 09, 2012, 12:03:23 pm от Dr_midon</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg662"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17" title="Просмотр профиля ЦИТРИН">ЦИТРИН</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_662_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Оплот сообщества</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17">
+										<img class="avatar" src="index.php-action=dlattach;attach=30;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=30;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 485</li>
+								<li class="blurb">Марафон опавших листьев, коктейль из дыма и мыслей</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=17.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=17"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_662">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg662  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg662#msg662%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg662#msg662" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #24 :</strong> Ноябрь 09, 2012, 11:24:40 am &#187;</div>
+									<div id="msg_662_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_662">Спасибо Dr_midon) <br />Скрипт 100% рабочий. Очень толково все&nbsp; разъясняющий.<br />Интересно получилось. Вы не зря потратили свое время.&nbsp; <br />Добавлю в твиттер . <a href="javascript:if(confirm(%27https://twitter.com/ClickerForum  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/ClickerForum%27" tppabs="https://twitter.com/ClickerForum" class="bbc_link" target="_blank">https://twitter.com/ClickerForum</a> </div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_662">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_662_signature">Бабочки полёт будит тихую поляну в солнечном свету...</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg663"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29" title="Просмотр профиля Dr_midon">Dr_midon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_663_extra_info">
+								<li class="postgroup">Освоившийся</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 30</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="clip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/clip.gif" alt="" />
+									</div>
+									<h5 id="subject_663">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg663  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg663#msg663%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg663#msg663" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #25 :</strong> Ноябрь 09, 2012, 12:39:36 pm &#187;</div>
+									<div id="msg_663_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_663">Есть небольшая утилитка(Spy32 for windows) очень бородатого года, которая поможет разобраться в элементах форм запущенных приложений. Вчера пытался похожие найти, но более свежие. ХЗ как спросить у гугла. Нашел только платную.<br /><br />Использовать оч просто: запустил и перетягиваешь(Drag`n`Drop) крестик с первой вкладки на нужный тебе элемент. Программка показывает довольно много информации об целевом окне(кнопке/поле/элементе интерфейса). Можно некоторые свойства менять.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_663">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg664"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5" title="Просмотр профиля Oraven">Oraven</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_664_extra_info">
+								<li class="membergroup">Супермодератор</li>
+								<li class="postgroup">Герой форума</li>
+								<li class="stars"><img src="mod.png" tppabs="http://crapware.aidf.org/forum/Themes/default/images/mod.png" alt="*" /></li>
+								<li class="avatar">
+									<a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5">
+										<img class="avatar" src="index.php-action=dlattach;attach=510;type=avatar.gif" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=510;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 2873</li>
+								<li class="blurb">Котэ</li>
+								<li class="profile">
+									<ul>
+										<li><a href="index.php-action=profile;u=5.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=5"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_664">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg664  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg664#msg664%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg664#msg664" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #26 :</strong> Ноябрь 09, 2012, 01:04:56 pm &#187;</div>
+									<div id="msg_664_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_664"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg663  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg663#msg663%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg663#msg663">Цитата: Dr_midon от Ноябрь 09, 2012, 12:39:36 pm</a></div></div><blockquote class="bbc_standard_quote">Есть небольшая утилитка(Spy32 for windows) очень бородатого года, которая поможет разобраться в элементах форм запущенных приложений. Вчера пытался похожие найти, но более свежие. ХЗ как спросить у гугла. Нашел только платную.<br /><br />Использовать оч просто: запустил и перетягиваешь(Drag`n`Drop) крестик с первой вкладки на нужный тебе элемент. Программка показывает довольно много информации об целевом окне(кнопке/поле/элементе интерфейса). Можно некоторые свойства менять.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><strong>InqSoft Window Scanner 1.7</strong><br /><a href="javascript:if(confirm(%27http://clickermann.tk/forum/index.php?topic=42.msg572  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://clickermann.tk/forum/index.php?topic=42.msg572#msg572%27" tppabs="http://clickermann.tk/forum/index.php?topic=42.msg572#msg572" class="bbc_link" target="_blank">http://clickermann.tk/forum/index.php?topic=42.msg572#msg572</a></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_664">
+								&#171; <em>Последнее редактирование: Ноябрь 09, 2012, 01:09:48 pm от Oraven</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg668"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29" title="Просмотр профиля Dr_midon">Dr_midon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_668_extra_info">
+								<li class="postgroup">Освоившийся</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 30</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_668">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg668  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg668#msg668%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg668#msg668" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #27 :</strong> Ноябрь 09, 2012, 02:50:37 pm &#187;</div>
+									<div id="msg_668_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_668">InqSoft Window Scanner 1.7 поинтереснее будет, побольше функционала, спс <img src="wink.gif" tppabs="http://crapware.aidf.org/forum/Smileys/default/wink.gif" alt=";&#41;" title="Подмигивающий" class="smiley" /><br />Но она тож довольно-таки старенькая, хотя и помоложе того, что я выложил.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_668">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg678"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=24  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=24%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=24" title="Просмотр профиля Ляпис">Ляпис</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_678_extra_info">
+								<li class="postgroup">Освоившийся</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=24  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=24%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=24">
+										<img class="avatar" src="index.php-action=dlattach;attach=49;type=avatar.png" tppabs="http://crapware.aidf.org/forum/index.php?action=dlattach;attach=49;type=avatar" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Сообщений: 35</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=24  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=24%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=24"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_678">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg678  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg678#msg678%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg678#msg678" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #28 :</strong> Ноябрь 09, 2012, 08:37:39 pm &#187;</div>
+									<div id="msg_678_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_678"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg660  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg660#msg660%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg660#msg660">Цитата: Dr_midon от Ноябрь 08, 2012, 11:55:12 pm</a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg652  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg652#msg652%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg652#msg652">Цитата: Ляпис от Ноябрь 08, 2012, 08:38:59 am</a></div></div><blockquote class="bbc_alternate_quote">а есть возможность сохранить и воспроизвести положение ползунков вертикальной и горизонтальной прокрутки содержимого окна?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Стандартными средствами только анализировав картинку и сохранением в переменную смещения ползунка. Или в Photoshop`e посчитав, на сколько пикселей сместился ползунок, а затем при помощи связки LDOWN (x, y) -&gt; MOVE (x, y) -&gt; LUP (x, y) передвинуть его. Либо посылать ему сообщение <strong>SendMessage(hwnd, WM_HSCROLL, SB_THUMBPOSITION, 0)</strong> подробнее тут: <a href="javascript:if(confirm(%27http://msdn.microsoft.com/en-us/library/windows/desktop/bb787575(v=vs.85).aspx  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://msdn.microsoft.com/en-us/library/windows/desktop/bb787575(v=vs.85).aspx%27" tppabs="http://msdn.microsoft.com/en-us/library/windows/desktop/bb787575(v=vs.85).aspx" class="bbc_link" target="_blank">http://msdn.microsoft.com/en-us/library/windows/desktop/bb787575(v=vs.85).aspx</a><br />Не стандартными - писать отдельную DLL и с помощью ее это проделывать.<br />Других вариантов не придумал.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Хотел попробовать <strong>SendMessage(hwnd, WM_HSCROLL, SB_THUMBPOSITION, 0)</strong>. В справке кмана написано:<br /><div class="quoteheader"><div class="topslice_quote">Цитировать</div></div><blockquote class="bbc_standard_quote">Поскольку у нас нет всех констант &quot;WM_&quot;, то параметр message необходимо задавать десятичным числом.</blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>на чём собственно все мои потуги и закончились. Не нашел справочника где даются числовые значения констант &quot;WM_&quot;, если я правильно всё понял.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_678">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+							<div class="signature" id="msg_678_signature"><tt class="bbc_tt">cmann4.7 se win8 slimbrowser intel core2duo<br />текущий проект - &quot;Зомби Ферма&quot; VK</tt></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg679"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29" title="Просмотр профиля Dr_midon">Dr_midon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_679_extra_info">
+								<li class="postgroup">Освоившийся</li>
+								<li class="stars"><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /><img src="star.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/star.gif" alt="*" /></li>
+								<li class="postcount">Сообщений: 30</li>
+								<li class="profile">
+									<ul>
+										<li><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=profile;u=29  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=profile;u=29%27" tppabs="http://crapware.aidf.org/forum/index.php?action=profile;u=29"><img src="profile_sm.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/icons/profile_sm.gif" alt="Просмотр профиля" title="Просмотр профиля" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="xx.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_679">
+										<a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg679  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg679#msg679%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg679#msg679" rel="nofollow">Re: Типовые алгоритмы, вводные статьи</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>Ответ #29 :</strong> Ноябрь 09, 2012, 10:09:00 pm &#187;</div>
+									<div id="msg_679_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_679">Жаль нет у форума сворачивающихся блоков, так бы туда все переписал.<br />Нашел следующее на японском сайте, но думаю проблем с языком не возникнет&nbsp; <img src="grin.gif" tppabs="http://crapware.aidf.org/forum/Smileys/default/grin.gif" alt=";D" title="Усмешка" class="smiley" /><br />messages: <a href="javascript:if(confirm(%27http://www1.u-netsurf.ne.jp/~ozawa/prog/event/message.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www1.u-netsurf.ne.jp/~ozawa/prog/event/message.html%27" tppabs="http://www1.u-netsurf.ne.jp/~ozawa/prog/event/message.html" class="bbc_link" target="_blank">http://www1.u-netsurf.ne.jp/~ozawa/prog/event/message.html</a><br /><br />Еще нужны запросы пользователя (wParam):<br /><div class="codeheader">Код: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Выделить]</a></div><code class="bbc_code">&nbsp; &nbsp; &nbsp;WM_VSCROLL&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; WM_HSCROLL<br />--------------------------------------------------------<br />SB_LINEUP&nbsp; &nbsp; &nbsp; &nbsp; = 0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SB_LINELEFT&nbsp; &nbsp; &nbsp; = 0<br />SB_LINEDOWN&nbsp; &nbsp; &nbsp; = 1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SB_LINERIGHT&nbsp; &nbsp; &nbsp;= 1<br />SB_PAGEUP&nbsp; &nbsp; &nbsp; &nbsp; = 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SB_PAGELEFT&nbsp; &nbsp; &nbsp; = 2<br />SB_PAGEDOWN&nbsp; &nbsp; &nbsp; = 3&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SB_PAGERIGHT&nbsp; &nbsp; &nbsp;= 3<br />SB_THUMBPOSITION = 4&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SB_THUMBPOSITION = 4<br />SB_THUMBTRACK&nbsp; &nbsp; = 5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SB_THUMBTRACK&nbsp; &nbsp; = 5<br />SB_TOP&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 6&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SB_LEFT&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 6<br />SB_BOTTOM&nbsp; &nbsp; &nbsp; &nbsp; = 7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SB_RIGHT&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 7<br />SB_ENDSCROLL&nbsp; &nbsp; &nbsp;= 8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SB_ENDSCROLL&nbsp; &nbsp; &nbsp;= 8</code><br />Кроме того не стоит забывать, что<br /><a href="javascript:if(confirm(%27http://msdn.microsoft.com/ru-ru/library/windows/desktop/bb787575(v=vs.85).aspx  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://msdn.microsoft.com/ru-ru/library/windows/desktop/bb787575(v=vs.85).aspx%27" tppabs="http://msdn.microsoft.com/ru-ru/library/windows/desktop/bb787575(v=vs.85).aspx" class="bbc_link" target="_blank">http://msdn.microsoft.com/ru-ru/library/windows/desktop/bb787575(v=vs.85).aspx</a><br /><br /><div class="quoteheader"><div class="topslice_quote"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.msg660  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.msg660#msg660%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.msg660#msg660">Цитата: msdn.microsoft.com от Ноябрь 08, 2012, 11:55:12 pm</a></div></div><blockquote class="bbc_standard_quote">The WM_HSCROLL message is sent to a window when a scroll event occurs in the window&#039;s standard horizontal scroll bar. This message is also sent to the owner of a horizontal scroll bar control when a scroll event occurs in the control.<br /><br />wParam<br />The HIWORD specifies the current position of the scroll box if the LOWORD is SB_THUMBPOSITION or SB_THUMBTRACK; otherwise, this word is not used.<br />The LOWORD specifies a scroll bar value that indicates the user&#039;s scrolling request. This word can be one of the following values.<br />SB_ENDSCROLL<br />SB_LEFT<br />SB_RIGHT<br />SB_LINELEFT<br />SB_LINERIGHT<br />SB_PAGELEFT<br />SB_PAGERIGHT<br />SB_THUMBPOSITION<br />SB_THUMBTRACK<br /><br />lParam<br />If the message is sent by a scroll bar control, this parameter is the handle to the scroll bar control. If the message is sent by a standard scroll bar, this parameter is NULL.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />Вольный перевод:<br />WM_HSCROLL сообщение отправляется в окно, когда событие scroll происходит в горизонтальной полосе прокрутки окна. Это сообщение также отправляется владельцу горизонтальной полосы прокрутки при возникновении события scroll в элементе управления.<br /><br />WPARAM<br />HIWORD определяет положение полосы прокрутки, если LOWORD берется значение SB_THUMBPOSITION или SB_THUMBTRACK, в противном случае это слово не используется.<br />LOWORD указывает запрос пользователя. Это слово может быть одним из следующих значений.<br />SB_ENDSCROLL<br />SB_LEFT<br />SB_RIGHT<br />SB_LINELEFT<br />SB_LINERIGHT<br />SB_PAGELEFT<br />SB_PAGERIGHT<br />SB_THUMBPOSITION<br />SB_THUMBTRACK<br /><br />lParam<br />Если сообщение отправляется и полосе прокрутки, lParam является дескриптором управления полосы прокрутки. Если сообщение не отправляется полосе прокрутки, lParam имеет значение NULL</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_679">
+								&#171; <em>Последнее редактирование: Ноябрь 09, 2012, 10:27:30 pm от Dr_midon</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="ip.gif" tppabs="http://crapware.aidf.org/forum/Themes/default/images/ip.gif" alt="" />
+								Записан
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+		<div class="buttonlist floatright">
+			<ul>
+				<li><a class="button_strip_print" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0%27" tppabs="http://crapware.aidf.org/forum/index.php?action=printpage;topic=33.0" rel="new_win nofollow"><span class="last">Печать</span></a></li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Страницы: <a class="navPages" href="index.php-topic=33.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0">1</a> [<strong>2</strong>] <a class="navPages" href="index.php-topic=33.30.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.30">3</a> <a class="navPages" href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.45  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.45%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.45">4</a> <span style="font-weight: bold;" onclick="expandPages(this, 'index.php-topic=33.%1$d.htm'/*tpa=http://crapware.aidf.org/forum/index.php?topic=33.%1$d*/, 60, 195, 15);" onmouseover="this.style.cursor='pointer';"> ... </span><a class="navPages" href="index.php-topic=33.195.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.195">14</a> </div>
+				<div class="nextlinks_bottom"><a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=prev#new">&laquo; предыдущая тема</a> <a href="javascript:if(confirm(%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new%27" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0;prev_next=next#new">следующая тема &raquo;</a></div>
+			</div>
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="index.php.htm" tppabs="http://crapware.aidf.org/forum/index.php"><span>Автокликер Clickermann :: Форум</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php.htm#c1" tppabs="http://crapware.aidf.org/forum/index.php#c1"><span>Основной раздел</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php-board=1.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?board=1.0"><span>Общие вопросы</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="index.php-topic=33.0.htm" tppabs="http://crapware.aidf.org/forum/index.php?topic=33.0"><span>Типовые алгоритмы, вводные статьи (Новички, читайте!)</span></a>
+			</li>
+		</ul>
+	</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+				<script type="text/javascript" src="topic.js" tppabs="http://crapware.aidf.org/forum/Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					var oQuickReply = new QuickReply({
+						bDefaultCollapsed: true,
+						iTopicId: 33,
+						iStart: 15,
+						sScriptUrl: smf_scripturl,
+						sImagesUrl: "index-13.htm"/*tpa=http://crapware.aidf.org/forum/Themes/default/images*/,
+						sContainerId: "quickReplyOptions",
+						sImageId: "quickReplyExpand",
+						sImageCollapsed: "collapse-1.gif"/*tpa=http://crapware.aidf.org/forum/collapse.gif*/,
+						sImageExpanded: "expand.gif"/*tpa=http://crapware.aidf.org/forum/expand.gif*/,
+						sJumpAnchor: "quickreply"
+					});
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 33,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="d3b349eb410" value="a7172b9ddd58b454b887154219817082" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="33" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Сохранить" tabindex="2" onclick="return oQuickModify.modifySave(\'a7172b9ddd58b454b887154219817082\', \'d3b349eb410\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Отменить" tabindex="3" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="4" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://crapware.aidf.org/forum/index.php'+'?topic=33.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Тема: %subject% &nbsp;(Прочитано 116612 раз)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Перейти в:<" + "/label> %dropdown_list%",
+							iCurBoardId: 1,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Общие вопросы",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "да"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 1,
+							iTopicId: 33,
+							sSessionId: "a7172b9ddd58b454b887154219817082",
+							sSessionVar: "d3b349eb410",
+							sLabelIconList: "Иконка сообщения",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		</div>
+	</div></div>
+	<div id="footer_section"><div class="frame">
+		<ul class="reset">
+			<li class="copyright">
+			<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="index.php-action=credits.htm" tppabs="http://crapware.aidf.org/forum/index.php?action=credits" title="Simple Machines Forum" target="_blank" class="new_win">SMF 2.0.2</a> |
+ <a href="javascript:if(confirm(%27http://www.simplemachines.org/about/smf/license.php  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.simplemachines.org/about/smf/license.php%27" tppabs="http://www.simplemachines.org/about/smf/license.php" title="License" target="_blank" class="new_win">SMF &copy; 2011</a>, <a href="javascript:if(confirm(%27http://www.simplemachines.org/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.simplemachines.org/%27" tppabs="http://www.simplemachines.org/" title="Simple Machines" target="_blank" class="new_win">Simple Machines</a>
+			</span></li>
+			<li><a id="button_xhtml" href="javascript:if(confirm(%27http://validator.w3.org/check?uri=referer  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://validator.w3.org/check?uri=referer%27" tppabs="http://validator.w3.org/check?uri=referer" target="_blank" class="new_win" title="Valid XHTML 1.0!"><span>XHTML</span></a></li>
+			<li><a id="button_rss" href="index.php-action=.xml;type=rss" tppabs="http://crapware.aidf.org/forum/index.php?action=.xml;type=rss" class="new_win"><span>RSS</span></a></li>
+			<li class="last"><a id="button_wap2" href="index.php-wap2.htm" tppabs="http://crapware.aidf.org/forum/index.php?wap2" class="new_win"><span>Мобильная версия</span></a></li>
+			<li>
+			 <!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t26.5;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: �������� ����� ����������� ��"+
+" �������' "+
+"border=0 width=88 height=15></a>")//--></script><!--/LiveInternet-->
+			</li>
+			
+		</ul>
+	</div></div>
+</div>
+</body></html>
